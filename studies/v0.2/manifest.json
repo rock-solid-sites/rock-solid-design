@@ -1,0 +1,123 @@
+{
+  "version": "0.2-study-proposal",
+  "status": "research-only",
+  "art": "structural-cutaway",
+  "comparison": "neutral-boxes-and-lines",
+  "updated": "2026-10-27",
+  "notes": "These examples are abstracted from owner-reported work; none verifies deployment, production performance, or actual data transport. They contain no private design screenshots.",
+  "studies": [
+    {
+      "id": "booking-relationship",
+      "question": "How is a property's booking journey related to an external reservations service?",
+      "audience": "potential clients",
+      "truthMode": "reported-project",
+      "lifecycle": [
+        "in-development"
+      ],
+      "takeaway": "A property's website, booking experience, and external reservation account have distinct responsibilities.",
+      "evidence": "Reported by project owner; connection type and shipment status unverified.",
+      "relations": [
+        {
+          "from": "property-website",
+          "to": "booking-experience",
+          "kind": "business-association",
+          "direction": "not-applicable"
+        },
+        {
+          "from": "booking-experience",
+          "to": "external-reservations",
+          "kind": "dependency",
+          "direction": "not-applicable"
+        }
+      ],
+      "longDescription": "A simplified property website is shown at left, a separate booking experience in the center, and an external reservations platform at right. Lines connect the three to communicate responsibilities and dependency. The picture does not establish whether a direct API, iframe, or other route currently transports booking data."
+    },
+    {
+      "id": "architecture-pivot",
+      "question": "Why was the original WordPress and iframe approach reconsidered?",
+      "audience": "general and technical readers",
+      "truthMode": "reported-project",
+      "lifecycle": [
+        "historical",
+        "evaluated",
+        "proposed"
+      ],
+      "takeaway": "The project tested the old approach and changed direction toward Astro sites and API-led booking.",
+      "evidence": "Project owner described repeated modernization and iframe/agent tests followed by the Astro/API direction; do not infer deployment.",
+      "relations": [
+        {
+          "from": "legacy-wordpress",
+          "to": "evaluations",
+          "kind": "process-step",
+          "direction": "outbound"
+        },
+        {
+          "from": "evaluations",
+          "to": "selected-direction",
+          "kind": "process-step",
+          "direction": "outbound"
+        }
+      ],
+      "longDescription": "Three stages appear from left to right: the original WordPress site with an embedded booking frame, a central evaluation stage, and a new Astro web interface with a separate API-led integration element. Arrows show a chronological decision rather than data flow. The last frame denotes the chosen architectural direction, not its completed delivery."
+    },
+    {
+      "id": "independent-properties",
+      "question": "Why do four properties have distinct websites even though they all need reservations?",
+      "audience": "general readers",
+      "truthMode": "reported-project",
+      "lifecycle": [
+        "in-development"
+      ],
+      "takeaway": "Each property can express a distinct visual identity while maintaining its own booking dependency.",
+      "evidence": "The project owner reports four independent site designs with no shared design components and separate Beds24 property accounts; no screenshots are reproduced.",
+      "relations": [
+        {
+          "from": "site-1",
+          "to": "reservation-account-1",
+          "kind": "dependency",
+          "direction": "not-applicable"
+        },
+        {
+          "from": "site-2",
+          "to": "reservation-account-2",
+          "kind": "dependency",
+          "direction": "not-applicable"
+        },
+        {
+          "from": "site-3",
+          "to": "reservation-account-3",
+          "kind": "dependency",
+          "direction": "not-applicable"
+        },
+        {
+          "from": "site-4",
+          "to": "reservation-account-4",
+          "kind": "dependency",
+          "direction": "not-applicable"
+        }
+      ],
+      "longDescription": "Four separate website frames are arranged horizontally. Their interior silhouettes are deliberately different: a conventional content page, an image-led landing page, a strong two-column page, and an asymmetrical set of panels. A straight line descends from each website to a separate numbered reservation account. No central shared reservation account is implied, and the illustrations do not reproduce real designs or confirm an API route."
+    },
+    {
+      "id": "hms-phase-two",
+      "question": "How does the future HMS effort change the scope of the original project?",
+      "audience": "potential clients",
+      "truthMode": "reported-project",
+      "lifecycle": [
+        "in-development",
+        "proposed"
+      ],
+      "takeaway": "The first phase addresses property websites and reservations; HMS is a second phase expanding toward management and marketing coordination.",
+      "evidence": "Project owner described HMS as a second phase; specific functionality is still being developed.",
+      "relations": [
+        {
+          "from": "phase-one",
+          "to": "phase-two",
+          "kind": "process-step",
+          "direction": "outbound"
+        }
+      ],
+      "longDescription": "A left panel titled Phase 1 shows a website and separate booking dependency. A single arrow, labelled Next, leads to a right panel titled Phase 2 / In Development, containing proposed marketing coordination and management workflow areas. Dashed boundaries and explicit labels mark proposed scope, not deployed features. The arrow indicates project sequence, not a software API."
+    }
+  ]
+}

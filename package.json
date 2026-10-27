@@ -1,0 +1,27 @@
+{
+  "name": "rock-solid-design",
+  "version": "0.1.0",
+  "description": "Monochrome web design tokens and structural-cutaway schematics",
+  "type": "module",
+  "license": "MIT",
+  "sideEffects": [
+    "./styles/*.css"
+  ],
+  "exports": {
+    "./tokens.css": "./styles/tokens.css",
+    "./foundations.css": "./styles/foundations.css",
+    "./schematic.css": "./styles/schematic.css",
+    "./schematics/*": "./schematics/*.svg"
+  },
+  "files": [
+    "styles",
+    "schematics",
+    "docs",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "check": "npm test && npm pack --dry-run"
+  }
+}

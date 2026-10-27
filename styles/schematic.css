@@ -1,0 +1,18 @@
+/* Structural-cutaway illustration treatment C; experimental reference tokens. */
+:root {
+  --rss-schematic-ink: #111111;
+  --rss-schematic-paper: #FAFAF8;
+  --rss-schematic-mid: #D8D8D5;
+  --rss-schematic-guide: #B9B9BF;
+  --rss-schematic-stroke-primary: 3px;
+  --rss-schematic-stroke-support: 2px;
+  --rss-schematic-stroke-guide: 1px;
+  --rss-schematic-radius: 4px;
+}
+.rss-schematic { max-width: 100%; height: auto; background: var(--rss-schematic-paper); }
+.rss-schematic :is(.outline,.primary-outline) { fill: none; stroke: var(--rss-schematic-ink); stroke-width: var(--rss-schematic-stroke-primary); stroke-linejoin: round; }
+.rss-schematic .support-outline { fill: none; stroke: var(--rss-schematic-ink); stroke-width: var(--rss-schematic-stroke-support); }
+.rss-schematic .guide { fill: none; stroke: var(--rss-schematic-guide); stroke-width: var(--rss-schematic-stroke-guide); }
+.rss-schematic .primary { fill: var(--rss-schematic-ink); }
+.rss-schematic .support { fill: var(--rss-schematic-mid); }
+.rss-schematic .future { stroke-dasharray: 6 5; }

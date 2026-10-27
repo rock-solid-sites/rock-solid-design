@@ -30,7 +30,7 @@ test('examples have semantic alternatives and no scripts or external loads',()=>
     assert.match(s,/<title id="title">/);
     assert.match(s,/<desc id="description">/);
     assert.match(s,/viewBox="0 0/);
-    assert.doesNotMatch(s,/<script|<foreignObject|<image|http:\/\/|https:\/\//i);
+    assert.doesNotMatch(s,/<script|<foreignObject|<image|(?:href|src)\s*=\s*["']\s*(?:https?:|data:)/i);
     assert.doesNotMatch(s,/Trip.?N|Chill Zone|Pink Bubble|Property [A-Z][a-z]+/i);
   }
 });

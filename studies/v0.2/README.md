@@ -2,7 +2,7 @@
 
 **Status:** v0.2 visual evaluation proposal. No production claim, standardization, API release, or downstream site deployment. The public 0.1.0 package and its exports stay unchanged.
 
-The four subjects are grounded in an owner-reported hospitality website/booking modernization project, abstracted into anonymous examples. The diagrams are **not screenshots, verified technical topology, or delivery evidence**. Refer to [manifest.json](manifest.json) for audience, question, **per-node lifecycle and evidence status**, relation types and long descriptions. Read the [proposed grammar](../../docs/schematic-grammar-v0.2-proposal.md) and [validation plan](../../docs/research/validation-matrix-2026-10-27.md) before using an image.
+The first four subjects are grounded in an owner-reported hospitality website/booking modernization project, abstracted into anonymous examples. The fifth is a **generic adversarial-review process**, testing the vocabulary outside hospitality. The diagrams are **not screenshots, verified technical topology, or delivery evidence**. Refer to [manifest.json](manifest.json) for audience, question, **per-node lifecycle and evidence status**, relation types and long descriptions. Read the [proposed grammar](../../docs/schematic-grammar-v0.2-proposal.md) and [validation plan](../../docs/research/validation-matrix-2026-10-27.md) before using an image.
 
 The **paired exploratory comparison** asks whether the stronger structural cutaway helps comprehension more than simple labelled rectangles. Both treatments aim to preserve the same core facts, subject headings, connection direction where applicable, and implementation-status caveats. The baseline is a deliberately plain communication reference, not an alternative brand identity. **This is not yet an isolated-variable experiment:** geometry, visual detail, content density and silhouette differ between treatments, so preferences cannot be attributed to any single stylistic feature. Future comprehension trials should include a typography/label-matched intermediate condition and counterbalanced presentation order.
 
@@ -12,6 +12,7 @@ The **paired exploratory comparison** asks whether the stronger structural cutaw
 | **Architectural pivot** — ![Architectural pivot as bold structural cutaway](./architecture-pivot.svg) | ![Architectural pivot in a neutral diagram treatment](./baselines/architecture-pivot.svg) |
 | **Four independent experiences** — ![Four independent experiences as bold structural cutaway](./independent-properties.svg) | ![Four independent experiences in a neutral diagram treatment](./baselines/independent-properties.svg) |
 | **HMS phase-two expansion** — ![HMS phase-two expansion as bold structural cutaway](./hms-phase-two.svg) | ![HMS phase-two expansion in a neutral diagram treatment](./baselines/hms-phase-two.svg) |
+| **Adversarial review** — ![Adversarial build/review/verify process in structural cutaway form](./adversarial-review.svg) | ![Adversarial process in neutral boxes](./baselines/adversarial-review.svg) |
 
 ## Individual questions and intended takeaways
 
@@ -63,3 +64,25 @@ These are 760px-wide **medium/detail illustrations** and should be inspected at 
 Use the evaluation matrix: five-second gist, whether connectors are interpreted as confirmed live data flows, historical/planned status, comprehension compared with equivalent short prose, safe text equivalents, shape consistency and project-claim accuracy. None of these checks has been performed with readers yet.
 
 The four diagrams are deliberately different compositions; shared visual cues are bolder black frames, distinctive interface cutaways, straight connections, square attachment marks, warm paper, stepped-gray fills, simple corners, monotone labels, negative space and the inherited site design. No renderer, component API, or reusable SVG symbol definitions have been standardized.
+
+### 5. Adversarial review (cross-domain test)
+
+**Question:** How can a proposed change be challenged and checked independently?
+
+**Takeaway:** Build, independent review and verification are distinct responsibilities; their sequence does not promise defect-free results.
+
+**Status:** Generic process example, not verification of a particular implementation.
+
+**Long description:** A builder proposes a change. A reviewer challenges the change and identifies problems; a verifier checks supporting evidence. Directional arrows labelled SEND and CHECK indicate process order, not network transport or an automated certification system.
+
+## Independently authored scale variants — booking
+
+The booking pilot now has three genuinely different levels of visual detail. **These are not responsive reductions of a single SVG.** The compact tier uses simplified silhouettes and nearby text; the large tier exposes more of the three interface surfaces and their responsibilities. Neither introduces an unverified transport connection.
+
+| Scale | Structural-cutaway study | Purpose |
+| --- | --- | --- |
+| S, 192×136 | ![Small purpose-designed booking relationship emblem](./tiers/booking-compact.svg) | Service-card illustration; no microscopic form labels |
+| M, 760×296 | ![Booking relationship reference composition](./booking-relationship.svg) | Three responsibilities with local relationship labels |
+| L, 960×440 | ![Detailed booking cutaway with named responsibilities](./tiers/booking-detailed.svg) | Larger case-study cutaway, still not a verified technical topology |
+
+**Critical:** tests have not yet established whether 192px/760px/960px display sizes are suitable in real pages. Future device/browser checks must validate actual size and caption placement. The S tier is an emblem representing dependency, not a complete three-component architecture view. Do not use it to infer an API route.

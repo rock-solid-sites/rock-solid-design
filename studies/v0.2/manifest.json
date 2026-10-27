@@ -56,7 +56,24 @@
           "sourceStatus": "owner-reported",
           "note": "A separate reservation account is reported; technical interface and live status not independently verified."
         }
-      ]
+      ],
+      "variants": {
+        "S": {
+          "asset": "tiers/booking-compact.svg",
+          "viewBox": "0 0 192 136",
+          "shortCaption": "A website depends on a separate reservation service."
+        },
+        "M": {
+          "asset": "booking-relationship.svg",
+          "viewBox": "0 0 760 296",
+          "shortCaption": "A property site offers a booking journey requiring reservations."
+        },
+        "L": {
+          "asset": "tiers/booking-detailed.svg",
+          "viewBox": "0 0 960 440",
+          "shortCaption": "Responsibility boundaries, not confirmed network transport."
+        }
+      }
     },
     {
       "id": "architecture-pivot",
@@ -264,6 +281,58 @@
           "note": "Planned operational integration concept, not a shipped feature."
         }
       ]
+    },
+    {
+      "id": "adversarial-review",
+      "question": "How can a proposed change be challenged and checked by independent roles?",
+      "audience": "technical and nontechnical readers",
+      "truthMode": "generic-example",
+      "takeaway": "A builder prepares a change; a separate reviewer challenges it; a verification step checks evidence before acceptance.",
+      "evidence": "Generic example adapted from Rock Solid Sites's research into adversarial review. No claim that any particular automated deployment implements this exact sequence.",
+      "nodes": [
+        {
+          "id": "builder",
+          "role": "builder",
+          "lifecycle": "illustrative",
+          "sourceStatus": "generic",
+          "note": "Generic workflow role, not an assertion about a particular deployed system."
+        },
+        {
+          "id": "reviewer",
+          "role": "reviewer",
+          "lifecycle": "illustrative",
+          "sourceStatus": "generic",
+          "note": "Generic workflow role, not an assertion about a particular deployed system."
+        },
+        {
+          "id": "verifier",
+          "role": "verifier",
+          "lifecycle": "illustrative",
+          "sourceStatus": "generic",
+          "note": "Generic workflow role, not an assertion about a particular deployed system."
+        }
+      ],
+      "relations": [
+        {
+          "from": "builder",
+          "to": "reviewer",
+          "kind": "process-step",
+          "direction": "outbound",
+          "label": "SEND",
+          "status": "illustrated-relationship",
+          "transport": "not-asserted"
+        },
+        {
+          "from": "reviewer",
+          "to": "verifier",
+          "kind": "process-step",
+          "direction": "outbound",
+          "label": "CHECK",
+          "status": "illustrated-relationship",
+          "transport": "not-asserted"
+        }
+      ],
+      "longDescription": "A three-stage diagram presents build, independent review, and verification. The builder's change is passed to a reviewer who looks for problems. A verifier then checks supporting evidence. The stages are connected by arrows labelled Send and Check to show process sequence, not network traffic. The process does not certify correctness or claim that an automated system has been deployed."
     }
   ],
   "schema": "research/v0.2-node-status",

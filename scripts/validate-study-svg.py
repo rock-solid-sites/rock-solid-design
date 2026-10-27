@@ -14,7 +14,7 @@ NS = "{http://www.w3.org/2000/svg}"
 BLOCKED = {"script", "foreignObject", "image", "animate", "animateTransform", "set"}
 manifest = json.loads((FOLDER / "manifest.json").read_text(encoding="utf-8"))
 cases = manifest["studies"]
-assert len(cases) == 4 and len({x["id"] for x in cases}) == 4
+assert len(cases) == 5 and len({x["id"] for x in cases}) == 4
 checked = 0
 for case in cases:
     for base in (FOLDER, FOLDER / "baselines"):
@@ -38,4 +38,12 @@ for case in cases:
                     assert not value.lstrip().lower().startswith(("http:", "https:", "data:", "javascript:")), (file, attr)
                 assert not attr.lower().startswith("on"), (file, attr)
         checked += 1
-print(f"Validated {checked} standalone SVG specimens and controls.")
+for variant in ("booking-compact.svg", "booking-detailed.svg"):
+    file = FOLDER / "tiers" / variant
+    root = ET.parse(file).getroot()
+    assert root.tag == NS + "svg" and root.get("role") == "img", file
+    assert root.find(NS + "title") is not None and root.find(NS + "desc") is not None, file
+    assert len(root.find(NS + "desc").text or "") > 75, file
+    assert not list(root.iter(NS + "script")), file
+    checked += 1
+print(f"Validated {checked} standalone SVG specimens, controls and scale variants.")

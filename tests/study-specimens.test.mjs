@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 const read=(p)=>readFileSync(new URL('../'+p,import.meta.url),'utf8');
 const manifest=JSON.parse(read('studies/v0.2/manifest.json'));
-const cases=['booking-relationship','architecture-pivot','independent-properties','hms-phase-two'];
+const cases=['booking-relationship','architecture-pivot','independent-properties','hms-phase-two','adversarial-review'];
 test('v0.2 research studies map one-to-one to neutral controls',()=>{
   assert.deepEqual(manifest.studies.map(x=>x.id),cases);
   for(const id of cases){
@@ -36,12 +36,12 @@ test('truth caveats are visible and future features are not presented as already
   assert.match(read('studies/v0.2/independent-properties.svg'),/ACCOUNT 04/);
   assert.match(read('studies/v0.2/hms-phase-two.svg'),/PHASE 2 \/ IN DEVELOPMENT/);
   assert.match(read('studies/v0.2/hms-phase-two.svg'),/stroke-dasharray/);
-  assert.ok(manifest.studies.every(x=>x.truthMode==='reported-project'));
+  assert.deepEqual(manifest.studies.map(x=>x.truthMode),['reported-project','reported-project','reported-project','reported-project','generic-example']);
   assert.ok(manifest.status==='research-only');
 });
 
 test('neutral references use unbiased headings and do not stroke text by inheritance',()=>{
-  const headings=['BOOKING RELATIONSHIP','ARCHITECTURAL PIVOT','INDEPENDENT EXPERIENCES','PROJECT PHASES'];
+  const headings=['BOOKING RELATIONSHIP','ARCHITECTURAL PIVOT','INDEPENDENT EXPERIENCES','PROJECT PHASES','ADVERSARIAL REVIEW'];
   for(let i=0;i<cases.length;i++){
     const study=read('studies/v0.2/'+cases[i]+'.svg');
     const baseline=read('studies/v0.2/baselines/'+cases[i]+'.svg');
@@ -84,4 +84,20 @@ test('each illustrated node and relation has an explicit evidence and lifecycle 
     }
     assert.equal(study.lifecycle,undefined,'Ambiguous study-wide lifecycle should not remain');
   }
+});
+
+test('bookings have independently authored scale tiers with text alternatives',()=>{
+  const study=manifest.studies.find(s=>s.id==='booking-relationship');
+  const tiers=study.variants;
+  assert.deepEqual(Object.keys(tiers),['S','M','L']);
+  assert.deepEqual([tiers.S.viewBox,tiers.M.viewBox,tiers.L.viewBox],['0 0 192 136','0 0 760 296','0 0 960 440']);
+  for(const tier of ['S','M','L']){
+    const s=read('studies/v0.2/'+tiers[tier].asset);
+    assert.ok(s.includes('viewBox="'+tiers[tier].viewBox+'"'));
+    assert.match(s,/<title id="title">/);
+    assert.match(s,/<desc id="description">/);
+    assert.ok(tiers[tier].shortCaption);
+  }
+  assert.match(read('studies/v0.2/adversarial-review.svg'),/>CHALLENGE<\/text>/);
+  assert.match(read('studies/v0.2/baselines/adversarial-review.svg'),/>CHALLENGE<\/text>/);
 });

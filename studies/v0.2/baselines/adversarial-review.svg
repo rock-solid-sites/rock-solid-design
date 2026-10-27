@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 296" role="img" aria-labelledby="title description">
+<title id="title">Neutral comparison of an independent build, review and verification workflow</title>
+<desc id="description">Neutral diagram of the same generic process: a builder proposes a change, a reviewer independently challenges it, and a verifier checks evidence. Neither this nor the cutaway asserts automatic certification.</desc>
+<style>
+  .outline{fill:#FAFAF8;stroke:#111111;stroke-width:3.5;stroke-linejoin:round}
+  .detail{fill:none;stroke:#111111;stroke-width:2;stroke-linejoin:round}
+  .ink{fill:#111111}.soft{fill:#D8D8D5}.paper{fill:#FAFAF8}
+  .link{fill:none;stroke:#111111;stroke-width:3;stroke-linejoin:round}
+  .label{font:700 15px system-ui,sans-serif;fill:#111111}
+  .micro{font:500 12px ui-monospace,monospace;fill:#333333}
+  .white{font:700 13px system-ui,sans-serif;fill:#FAFAF8}
+  .hairline{fill:none;stroke:#C5C5C2;stroke-width:1}
+  
+</style>
+
+<rect width="760" height="296" fill="#FAFAF8"/>
+<text x="24" y="28" class="micro">SCHEMATIC STUDY / 05</text><text x="736" y="28" class="micro" text-anchor="end">ADVERSARIAL REVIEW</text><path d="M24 44H736" class="hairline"/>
+<rect x="24" y="98" width="208" height="91" fill="#FAFAF8" stroke="#111111" stroke-width="1.5"/>
+<rect x="276" y="98" width="208" height="91" fill="#FAFAF8" stroke="#111111" stroke-width="1.5"/>
+<rect x="528" y="98" width="208" height="91" fill="#FAFAF8" stroke="#111111" stroke-width="1.5"/>
+<path d="M232 144H276M484 144H528" stroke="#111111" stroke-width="1.5" fill="none"/>
+<path d="M270 139L276 144L270 149M522 139L528 144L522 149" stroke="#111111" stroke-width="1.5" fill="none"/>
+<text x="254" y="125" class="micro" text-anchor="middle">SEND</text>
+<text x="506" y="125" class="micro" text-anchor="middle">CHECK</text>
+<text x="128" y="140" class="label" text-anchor="middle">BUILD</text>
+<text x="128" y="163" class="micro" text-anchor="middle">PROPOSE A CHANGE</text>
+<text x="380" y="140" class="label" text-anchor="middle">CHALLENGE</text>
+<text x="380" y="163" class="micro" text-anchor="middle">INDEPENDENT REVIEW</text>
+<text x="632" y="140" class="label" text-anchor="middle">VERIFY</text>
+<text x="632" y="163" class="micro" text-anchor="middle">CHECK EVIDENCE</text>
+<text x="24" y="278" class="micro">GENERIC METHOD / NOT A CERTIFICATION</text>
+<text x="736" y="278" class="micro" text-anchor="end">ITERATION POSSIBLE; NO ZERO-DEFECT CLAIM</text>
+
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 296" role="img" aria-labelledby="title description" data-study="architecture-pivot">
+  <title id="title">A modernization project changes architectural direction after testing</title>
+  <desc id="description">Reported decision history: a legacy WordPress website and embedded booking interface were tested for modernization. After multiple attempts, Astro sites and a direct-API-led booking approach were chosen as a more workable direction. Selection does not assert production completion.</desc>
+  <style>
+    .label{font:700 13px system-ui,sans-serif;fill:#111111}
+    .micro{font:500 11px ui-monospace,monospace;fill:#111111}
+    .muted{font:500 11px ui-monospace,monospace;fill:#555555}
+    .white{font:700 13px system-ui,sans-serif;fill:#FAFAF8}
+    .guide{stroke:#C5C5C2;stroke-width:1;fill:none}
+    .frame{fill:#FAFAF8;stroke:#111111;stroke-width:3.5;stroke-linejoin:round}
+    .detail{fill:none;stroke:#111111;stroke-width:2;stroke-linejoin:round}
+    .link{fill:none;stroke:#111111;stroke-width:3;stroke-linecap:square;stroke-linejoin:round}
+    .fill{fill:#111111}
+    .soft{fill:#D8D8D5}
+  </style>
+  <rect width="760" height="296" rx="4" fill="#FAFAF8"/>
+  <path d="M24 44H736" class="guide"/>
+
+<text x="24" y="28" class="muted" >SCHEMATIC STUDY / 02</text><text x="736" y="28" class="muted" text-anchor="end">ARCHITECTURAL PIVOT</text>
+<text x="24" y="65" class="micro" >STARTING POINT</text><text x="275" y="65" class="micro" >EVALUATE</text><text x="530" y="65" class="micro" >CHOSEN DIRECTION</text>
+<rect x="24" y="78" width="206" height="142" rx="5" class="frame"/>
+<rect x="24" y="78" width="206" height="22" rx="4" class="fill"/>
+<rect x="43" y="115" width="165" height="82" rx="3" fill="#D8D8D5" stroke="#111111" stroke-width="2"/>
+<rect x="54" y="126" width="143" height="12" rx="2" class="fill"/>
+<rect x="54" y="149" width="143" height="35" rx="2" fill="#FAFAF8" stroke="#111111" stroke-width="2"/>
+<text x="126" y="167" class="micro" text-anchor="middle">EMBEDDED FORM</text>
+<rect x="42" y="231" width="170" height="24" rx="4" fill="#111111"/><text x="127" y="247" class="white" text-anchor="middle">WORDPRESS / IFRAME</text>
+<rect x="275" y="78" width="206" height="142" rx="5" class="frame"/>
+<rect x="297" y="100" width="162" height="24" rx="3" fill="#D8D8D5" stroke="#111111" stroke-width="2"/>
+<rect x="297" y="142" width="162" height="24" rx="3" fill="#FAFAF8" stroke="#111111" stroke-width="2"/>
+<text x="378" y="116" class="micro" text-anchor="middle">UI / AGENT TESTS</text>
+<text x="378" y="158" class="micro" text-anchor="middle">ALTERNATIVES</text>
+<path d="M378 124V142" class="detail"/>
+<text x="378" y="201" class="micro" text-anchor="middle">Reassess constraints</text>
+<rect x="309" y="231" width="139" height="24" rx="4" fill="#111111"/><text x="378.5" y="247" class="white" text-anchor="middle">ITERATE / TEST</text>
+<rect x="530" y="78" width="206" height="142" rx="5" class="frame"/>
+<rect x="530" y="78" width="206" height="22" rx="4" class="fill"/>
+<rect x="545" y="112" width="107" height="83" rx="3" fill="#FAFAF8" stroke="#111111" stroke-width="2"/>
+<rect x="555" y="123" width="88" height="12" rx="2" class="fill"/>
+<rect x="555" y="148" width="88" height="6" rx="2" class="soft"/>
+<rect x="555" y="161" width="63" height="6" rx="2" class="soft"/>
+<rect x="672" y="134" width="49" height="34" rx="3" class="fill"/>
+<text x="696" y="154" class="white" text-anchor="middle">API</text>
+<path d="M652 150H672" class="detail"/>
+<rect x="546" y="231" width="174" height="24" rx="4" fill="#111111"/><text x="633" y="247" class="white" text-anchor="middle">ASTRO / API-LED</text>
+<path d="M230 149H275M481 149H530" class="link"/>
+<path d="M267 143L275 149L267 155M522 143L530 149L522 155" class="detail"/>
+<text x="24" y="278" class="micro" >REPORTED DECISION HISTORY</text>
+<text x="736" y="278" class="muted" text-anchor="end">DIRECTION SELECTED, NOT A RELEASE CLAIM</text>
+
+</svg>

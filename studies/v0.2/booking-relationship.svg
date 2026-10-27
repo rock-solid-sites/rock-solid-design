@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 296" role="img" aria-labelledby="title description" data-study="booking-relationship">
+  <title id="title">A property website, booking experience and reservation platform</title>
+  <desc id="description">Generic study inspired by a multi-property hospitality project. The customer's website includes a booking journey and has a reservation-platform dependency. The diagram does not assert how reservations travel over the network or that any proposed direct API integration is deployed.</desc>
+  <style>
+    .label{font:700 13px system-ui,sans-serif;fill:#111111}
+    .micro{font:500 11px ui-monospace,monospace;fill:#111111}
+    .muted{font:500 11px ui-monospace,monospace;fill:#555555}
+    .white{font:700 13px system-ui,sans-serif;fill:#FAFAF8}
+    .guide{stroke:#C5C5C2;stroke-width:1;fill:none}
+    .frame{fill:#FAFAF8;stroke:#111111;stroke-width:3.5;stroke-linejoin:round}
+    .detail{fill:none;stroke:#111111;stroke-width:2;stroke-linejoin:round}
+    .link{fill:none;stroke:#111111;stroke-width:3;stroke-linecap:square;stroke-linejoin:round}
+    .fill{fill:#111111}
+    .soft{fill:#D8D8D5}
+  </style>
+  <rect width="760" height="296" rx="4" fill="#FAFAF8"/>
+  <path d="M24 44H736" class="guide"/>
+
+<text x="24" y="28" class="muted" >SCHEMATIC STUDY / 01</text><text x="736" y="28" class="muted" text-anchor="end">BOOKING RELATIONSHIP</text>
+<rect x="24" y="72" width="202" height="132" rx="5" class="frame"/>
+<rect x="24" y="72" width="202" height="21" rx="4" class="fill"/>
+<rect x="40" y="109" width="103" height="12" rx="2" class="fill"/>
+<rect x="40" y="130" width="165" height="5" rx="2" class="soft"/>
+<rect x="40" y="141" width="124" height="5" rx="2" class="soft"/>
+<rect x="40" y="162" width="89" height="25" rx="3" fill="#D8D8D5" stroke="#111111" stroke-width="2"/>
+<text x="125" y="226" class="label" text-anchor="middle">PROPERTY WEBSITE</text>
+<text x="125" y="245" class="micro" text-anchor="middle">Customer-facing experience</text>
+<rect x="280" y="72" width="200" height="132" rx="5" class="frame"/>
+<rect x="280" y="72" width="200" height="21" rx="4" class="fill"/>
+<rect x="297" y="108" width="106" height="10" rx="2" class="fill"/>
+<rect x="297" y="133" width="165" height="21" rx="3" fill="#FAFAF8" stroke="#111111" stroke-width="2"/>
+<rect x="297" y="163" width="165" height="21" rx="3" fill="#FAFAF8" stroke="#111111" stroke-width="2"/>
+<text x="380" y="226" class="label" text-anchor="middle">BOOKING EXPERIENCE</text>
+<text x="380" y="245" class="micro" text-anchor="middle">Dates, rooms and details</text>
+<rect x="534" y="72" width="202" height="132" rx="5" class="frame"/>
+<rect x="534" y="72" width="202" height="21" rx="4" class="fill"/>
+<rect x="557" y="109" width="154" height="18" rx="3" fill="#D8D8D5" stroke="#111111" stroke-width="2"/>
+<rect x="557" y="137" width="154" height="18" rx="3" fill="#FAFAF8" stroke="#111111" stroke-width="2"/>
+<rect x="557" y="165" width="154" height="18" rx="3" fill="#FAFAF8" stroke="#111111" stroke-width="2"/>
+<text x="635" y="226" class="label" text-anchor="middle">RESERVATIONS</text>
+<text x="635" y="245" class="micro" text-anchor="middle">External service / account</text>
+<text x="253" y="129" class="micro" text-anchor="middle">OFFERS</text>
+<text x="507" y="129" class="micro" text-anchor="middle">REQUIRES</text>
+<path d="M226 140H280M480 140H534" class="link"/>
+<rect x="221" y="135" width="10" height="10" rx="1" class="fill"/>
+<rect x="475" y="135" width="10" height="10" rx="1" class="fill"/>
+<text x="24" y="278" class="micro" >CONCEPT STUDY</text>
+<text x="736" y="278" class="muted" text-anchor="end">RELATIONSHIPS SHOWN; TRANSPORT NOT SPECIFIED</text>
+
+</svg>

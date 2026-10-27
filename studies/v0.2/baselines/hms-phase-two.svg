@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 296" role="img" aria-labelledby="title description" data-study="neutral-hms-phase-two">
+  <title id="title">Neutral boxes for the phase one work and phase two HMS expansion</title>
+  <desc id="description">Neutral comparator distinguishes initial site/booking work from in-development HMS marketing and management scope. Arrow marks sequence, not an API connection.</desc>
+  <style>
+    .label{font:700 13px system-ui,sans-serif;fill:#111111}
+    .micro{font:500 11px ui-monospace,monospace;fill:#111111}
+    .muted{font:500 11px ui-monospace,monospace;fill:#555555}
+    .white{font:700 13px system-ui,sans-serif;fill:#FAFAF8}
+    .guide{stroke:#C5C5C2;stroke-width:1;fill:none}
+    .frame{fill:#FAFAF8;stroke:#111111;stroke-width:3.5;stroke-linejoin:round}
+    .detail{fill:none;stroke:#111111;stroke-width:2;stroke-linejoin:round}
+    .link{fill:none;stroke:#111111;stroke-width:3;stroke-linecap:square;stroke-linejoin:round}
+    .fill{fill:#111111}
+    .soft{fill:#D8D8D5}
+  </style>
+  <rect width="760" height="296" rx="4" fill="#FAFAF8"/>
+  <path d="M24 44H736" class="guide"/>
+<g><text x="24" y="28" class="muted" >SCHEMATIC STUDY / 04</text><text x="736" y="28" class="muted" text-anchor="end">PROJECT PHASES</text>
+<rect x="24" y="100" width="296" height="120" rx="0" stroke="#111111" stroke-width="1.5" fill="#FAFAF8"/><rect x="434" y="100" width="302" height="120" rx="0" stroke="#111111" stroke-width="1.5" fill="#FAFAF8"/>
+<path d="M320 160H434" stroke="#111111" stroke-width="1.5" fill="none"/><path d="M427 155L434 160L427 165" stroke="#111111" stroke-width="1.5" fill="none"/><text x="376" y="147" class="micro" text-anchor="middle">NEXT</text>
+<text x="172" y="140" class="label" text-anchor="middle">PHASE 1</text>
+<text x="172" y="166" class="micro" text-anchor="middle">SITES + BOOKING WORK</text>
+<text x="585" y="140" class="label" text-anchor="middle">PHASE 2</text>
+<text x="585" y="165" class="micro" text-anchor="middle">HMS / IN DEVELOPMENT</text>
+<text x="24" y="278" class="micro" >REPORTED ROADMAP / NOT A FEATURE INVENTORY</text>
+<text x="736" y="278" class="muted" text-anchor="end">PHASE ARROW INDICATES SEQUENCE, NOT AN API CALL</text>
+</g>
+</svg>

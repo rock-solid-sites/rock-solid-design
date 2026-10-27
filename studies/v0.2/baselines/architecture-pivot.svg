@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 296" role="img" aria-labelledby="title description" data-study="neutral-architecture-pivot">
+  <title id="title">Neutral boxes summarizing the architectural decision history</title>
+  <desc id="description">The same reported progression, from legacy WordPress and an embedded booking form through evaluation to the chosen Astro and API-led direction. No production completion claimed.</desc>
+  <style>
+    .label{font:700 13px system-ui,sans-serif;fill:#111111}
+    .micro{font:500 11px ui-monospace,monospace;fill:#111111}
+    .muted{font:500 11px ui-monospace,monospace;fill:#555555}
+    .white{font:700 13px system-ui,sans-serif;fill:#FAFAF8}
+    .guide{stroke:#C5C5C2;stroke-width:1;fill:none}
+    .frame{fill:#FAFAF8;stroke:#111111;stroke-width:3.5;stroke-linejoin:round}
+    .detail{fill:none;stroke:#111111;stroke-width:2;stroke-linejoin:round}
+    .link{fill:none;stroke:#111111;stroke-width:3;stroke-linecap:square;stroke-linejoin:round}
+    .fill{fill:#111111}
+    .soft{fill:#D8D8D5}
+  </style>
+  <rect width="760" height="296" rx="4" fill="#FAFAF8"/>
+  <path d="M24 44H736" class="guide"/>
+<g><text x="24" y="28" class="muted" >SCHEMATIC STUDY / 02</text><text x="736" y="28" class="muted" text-anchor="end">ARCHITECTURAL PIVOT</text>
+<rect x="24" y="98" width="206" height="90" rx="0" stroke="#111111" stroke-width="1.5" fill="#FAFAF8"/><rect x="275" y="98" width="206" height="90" rx="0" stroke="#111111" stroke-width="1.5" fill="#FAFAF8"/><rect x="530" y="98" width="206" height="90" rx="0" stroke="#111111" stroke-width="1.5" fill="#FAFAF8"/>
+<path d="M230 143H275M481 143H530" stroke="#111111" stroke-width="1.5" fill="none"/><path d="M268 138L275 143L268 148M523 138L530 143L523 148" stroke="#111111" stroke-width="1.5" fill="none"/>
+<text x="127" y="133" class="label" text-anchor="middle">WORDPRESS</text>
+<text x="127" y="155" class="micro" text-anchor="middle">EMBEDDED FORM</text>
+<text x="378" y="132" class="label" text-anchor="middle">TEST OPTIONS</text>
+<text x="378" y="155" class="micro" text-anchor="middle">REASSESS</text>
+<text x="633" y="132" class="label" text-anchor="middle">ASTRO</text>
+<text x="633" y="155" class="micro" text-anchor="middle">API-LED DIRECTION</text>
+<text x="24" y="278" class="micro" >REPORTED DECISION HISTORY</text>
+<text x="736" y="278" class="muted" text-anchor="end">DIRECTION SELECTED, NOT A RELEASE CLAIM</text>
+</g>
+</svg>

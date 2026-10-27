@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 296" role="img" aria-labelledby="title description" data-study="hms-phase-two">
+  <title id="title">A second phase expands the scope from site and booking work to management and marketing</title>
+  <desc id="description">Reported roadmap. An initial workstream develops property websites and booking connections. A second phase, HMS, is in development and intends to better integrate day-to-day management and marketing. The diagram shows a phase progression, not a deployed technical connection or confirmed feature set.</desc>
+  <style>
+    .label{font:700 13px system-ui,sans-serif;fill:#111111}
+    .micro{font:500 11px ui-monospace,monospace;fill:#111111}
+    .muted{font:500 11px ui-monospace,monospace;fill:#555555}
+    .white{font:700 13px system-ui,sans-serif;fill:#FAFAF8}
+    .guide{stroke:#C5C5C2;stroke-width:1;fill:none}
+    .frame{fill:#FAFAF8;stroke:#111111;stroke-width:3.5;stroke-linejoin:round}
+    .detail{fill:none;stroke:#111111;stroke-width:2;stroke-linejoin:round}
+    .link{fill:none;stroke:#111111;stroke-width:3;stroke-linecap:square;stroke-linejoin:round}
+    .fill{fill:#111111}
+    .soft{fill:#D8D8D5}
+  </style>
+  <rect width="760" height="296" rx="4" fill="#FAFAF8"/>
+  <path d="M24 44H736" class="guide"/>
+
+<text x="24" y="28" class="muted" >SCHEMATIC STUDY / 04</text><text x="736" y="28" class="muted" text-anchor="end">PROJECT PHASES</text>
+<text x="24" y="65" class="micro" >PHASE 1 / SITES AND BOOKINGS</text>
+<text x="434" y="65" class="micro" >PHASE 2 / IN DEVELOPMENT</text>
+<rect x="24" y="78" width="296" height="157" rx="5" class="frame"/>
+<rect x="24" y="78" width="296" height="23" rx="4" class="fill"/>
+<rect x="43" y="116" width="137" height="97" rx="4" fill="#FAFAF8" stroke="#111111" stroke-width="2"/>
+<rect x="43" y="116" width="137" height="15" rx="3" class="fill"/>
+<rect x="58" y="143" width="89" height="10" rx="2" class="fill"/>
+<rect x="58" y="165" width="105" height="5" rx="2" class="soft"/>
+<rect x="58" y="177" width="75" height="5" rx="2" class="soft"/>
+<rect x="208" y="129" width="93" height="55" rx="4" fill="#D8D8D5" stroke="#111111" stroke-width="2"/>
+<text x="254" y="152" class="micro" text-anchor="middle">BOOKING</text>
+<text x="254" y="169" class="micro" text-anchor="middle">DEPENDENCY</text>
+<path d="M180 158H208" class="detail"/>
+<text x="171" y="226" class="micro" text-anchor="middle">CUSTOMER EXPERIENCE</text>
+<path d="M320 161H434" class="link"/>
+<path d="M423 152L434 161L423 170" class="detail"/>
+<text x="376" y="148" class="micro" text-anchor="middle">NEXT</text>
+<rect x="434" y="78" width="302" height="157" rx="5" class="frame"/>
+<rect x="434" y="78" width="302" height="23" rx="4" class="fill"/>
+<rect x="456" y="116" width="258" height="44" rx="4" fill="#FAFAF8" stroke="#111111" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="585" y="144" class="label" text-anchor="middle">MARKETING COORDINATION</text>
+<rect x="456" y="174" width="258" height="44" rx="4" fill="#FAFAF8" stroke="#111111" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="585" y="201" class="label" text-anchor="middle">MANAGEMENT WORKFLOWS</text>
+<text x="585" y="229" class="micro" text-anchor="middle">SCOPE UNDER DEVELOPMENT</text>
+<text x="24" y="278" class="micro" >REPORTED ROADMAP / NOT A FEATURE INVENTORY</text>
+<text x="736" y="278" class="muted" text-anchor="end">PHASE ARROW INDICATES SEQUENCE, NOT AN API CALL</text>
+
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 136" role="img" aria-labelledby="title description">
+<title id="title">Booking and reservations — compact cutaway</title>
+<desc id="description">A deliberately simplified compact emblem. At left is a webpage with an emphasized booking area; it is linked to a separate reservation service panel. This is a conceptual dependency, not a claim of direct API transport.</desc>
+<style>
+  .outline{fill:#FAFAF8;stroke:#111111;stroke-width:3.5;stroke-linejoin:round}
+  .detail{fill:none;stroke:#111111;stroke-width:2;stroke-linejoin:round}
+  .ink{fill:#111111}.soft{fill:#D8D8D5}.paper{fill:#FAFAF8}
+  .link{fill:none;stroke:#111111;stroke-width:3;stroke-linejoin:round}
+  .label{font:700 15px system-ui,sans-serif;fill:#111111}
+  .micro{font:500 12px ui-monospace,monospace;fill:#333333}
+  .white{font:700 13px system-ui,sans-serif;fill:#FAFAF8}
+  .hairline{fill:none;stroke:#C5C5C2;stroke-width:1}
+  .label{font-size:12px}.micro{font-size:9px}
+</style>
+
+<rect width="192" height="136" fill="#FAFAF8"/>
+<rect x="10" y="23" width="67" height="70" rx="4" class="outline"/>
+<rect x="10" y="23" width="67" height="12" rx="3" class="ink"/>
+<rect x="20" y="44" width="32" height="8" rx="1" class="ink"/>
+<rect x="20" y="60" width="47" height="6" rx="1" class="soft"/>
+<rect x="20" y="73" width="37" height="13" rx="2" class="ink"/>
+<path d="M77 62H113" class="link"/>
+<rect x="74" y="58" width="8" height="8" rx="1" class="ink"/>
+<rect x="113" y="30" width="68" height="63" rx="4" class="outline"/>
+<rect x="113" y="30" width="68" height="12" rx="3" class="ink"/>
+<rect x="124" y="50" width="46" height="10" rx="2" class="soft"/>
+<rect x="124" y="67" width="46" height="8" rx="2" class="soft"/>
+<rect x="124" y="81" width="46" height="5" rx="2" class="ink"/>
+<text x="96" y="118" class="label" text-anchor="middle">BOOKING</text>
+
+
+</svg>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Schematic comprehension study stimulus</title>
+<style>
+*{box-sizing:border-box}
+html,body{min-height:100%;margin:0;background:#FAFAF8;color:#111111}
+body{font-family:system-ui,-apple-system,sans-serif}
+main{margin:auto;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:12px}
+.viewport{width:100%;overflow-x:auto;overflow-y:hidden;text-align:center}
+.viewport img{display:block;margin:0 auto;width:760px;max-width:none;height:auto}
+.viewport.large img{width:960px}
+.viewport.compact img{width:192px}
+.prose{max-width:600px;margin:auto;text-align:left;font-size:20px;line-height:1.6;padding:32px 8px}
+.warning{font-size:16px;line-height:1.5;max-width:40ch}
+@media(max-width:650px){.viewport:not(.compact) img{margin:0}.viewport.compact img{margin:auto}}
+</style>
+</head>
+<body>
+<main id="presentation">
+<div id="stimulus" class="viewport">
+<img id="illustration" src="../booking-relationship.svg" alt="A website offers a booking experience requiring an external reservations service; the actual technical transport is not established" width="760" height="296">
+</div>
+</main>
+<script>
+'use strict';
+// This page is only the stimulus. Run tests using the separate facilitator guide.
+// No pre-exposure title, warning or visible answer appears on this screen.
+const cases={
+  'booking-relationship':'The website offers a booking experience that depends on a separate reservations service. No technical connection is verified.',
+  'architecture-pivot':'The project changed direction from a WordPress site with an embedded booking form through evaluation toward Astro and API-led integration. That direction is not proof of deployment.',
+  'independent-properties':'Four independently styled properties each keep a separate reservation account. The picture is conceptual and does not specify a direct API connection.',
+  'hms-phase-two':'HMS is an in-development second phase expanding toward management and marketing coordination. Planned functions are not shipped.',
+  'adversarial-review':'A builder proposes a change, an independent reviewer challenges it, and a verifier checks the evidence. The process cannot guarantee defect-free work.'
+};
+const q=new URLSearchParams(location.search);
+const study=Object.hasOwn(cases,q.get('case'))?q.get('case'):'booking-relationship';
+const variant=['cutaway','neutral','prose'].includes(q.get('variant'))?q.get('variant'):'cutaway';
+const size=['S','M','L'].includes(q.get('size'))?q.get('size'):'M';
+let src='../'+study+'.svg',width=760,height=296;
+if(variant==='neutral')src='../baselines/'+study+'.svg';
+if(variant==='cutaway'&&study==='booking-relationship'&&size==='S'){src='../tiers/booking-compact.svg';width=192;height=136;}
+if(variant==='cutaway'&&study==='booking-relationship'&&size==='L'){src='../tiers/booking-detailed.svg';width=960;height=440;}
+const surface=document.getElementById('stimulus');
+if(variant==='prose'){
+  const p=document.createElement('p');
+  p.className='prose';
+  p.textContent=cases[study];
+  surface.replaceChildren(p);
+} else {
+  const img=document.getElementById('illustration');
+  img.src=src;img.width=width;img.height=height;
+  img.alt=cases[study];
+  surface.className='viewport'+(width===192?' compact':width===960?' large':'');
+}
+</script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 296" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 296" data-study="adversarial-review" role="img" aria-labelledby="title description">
 <title id="title">An adversarial design and software review workflow</title>
 <desc id="description">Generic non-hospitality example: a builder submits a change for an independent reviewer to challenge. A separate verification step checks evidence before acceptance. The illustration shows a review method, not a guarantee of quality or proof of a deployed agent system.</desc>
 <style>

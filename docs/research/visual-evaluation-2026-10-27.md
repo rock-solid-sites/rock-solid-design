@@ -1,6 +1,6 @@
 # Visual evaluation checkpoint — 27 October 2026
 
-**Status:** Browser screenshots generated and verified as PNGs; **no direct visual pixel inspection, manual readability verdict, participant test or assistive-tech test yet**. This prevents conflating successful capture with a passed visual-quality gate.
+**Status:** Browser screenshots generated and verified as PNGs in Chrome 155; **no direct visual pixel inspection, manual readability verdict, participant test or assistive-tech test yet**. This prevents conflating successful capture with a passed visual-quality gate.
 
 ## Source of evidence
 
@@ -11,6 +11,21 @@
 - Captures succeeded: 8 desktop images **1440×1200** and one mobile image **390×1800**; PNG signatures and dimensions validated by Python. Source code checks and npm packaging also passed.
 
 The uploaded screenshots are available for a human reviewer to inspect; the connector available in this session does not expose their binary pixel content for direct visual judgement. No claim is made here that all nine were visually reviewed.
+
+## Expanded browser capture — additional verified coverage
+
+Run: https://github.com/rock-solid-sites/rock-solid-design/actions/runs/40437541342
+
+Artifact (15 PNGs): https://github.com/rock-solid-sites/rock-solid-design/actions/runs/40437541342/artifacts/12703699470
+
+Both CI jobs passed: `npm test`, SVG XML validation, package dry-run, and real Chrome headless PNG captures. Actual pixel dimensions reported by PNG header inspection:
+
+- **320×1800**, **375×1800**, **390×1800** — compact booking illustration in facilitator gallery.
+- **768×1200** and **1024×1200** — medium reference in constrained layouts, using horizontal overflow rather than unreadable shrinking.
+- **1440×1200** — five Treatment C examples, booking neutral, booking prose, booking L tier, and no-priming participant stimulus.
+- **375×1000** — unprimed compact booking participant stimulus.
+
+These are **viewport screenshots**, not claims that all content was visible, non-overlapping, accessible, or understood. Human inspection of the artifact is still outstanding.
 
 ## Findings grounded in source dimensions
 
@@ -29,10 +44,10 @@ The uploaded screenshots are available for a human reviewer to inspect; the conn
 | Browser screenshot creation, correct PNG size | PASS | CI artifact/log |
 | Actual pixel inspection at native size | NOT DONE | Reviewer observations from screenshots |
 | Contrast/visual collision/accessibility check | NOT DONE | Browser manual audit, not only SVG source |
-| 320/375/390/768/1024/1440 width matrix | PARTIAL | Additional actual viewport runs |
+| 320/375/390/768/1024/1440 width captures | CAPTURED (automated) | Pixel inspection for legibility, scroll, clipping, behavior still needed |
 | 200% browser zoom | NOT DONE | Browser inspection |
 | Six-person formative test | NOT DONE | Raw anonymized responses, counterbalanced order |
-| Compare cutaway vs. neutral vs. prose | NOT DONE | First-view reader observations |
+| Compare cutaway vs. neutral vs. prose | CAPTURED, NOT EVALUATED | First-view reader observations |
 | Cross-domain generalizability | ONE REFERENCE ONLY | Wider examples / reader results |
 
 ## Do not infer

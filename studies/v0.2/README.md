@@ -1,6 +1,6 @@
 # Schematic grammar pilot: structural cutaways vs. neutral diagram baselines
 
-**Open the [standalone HTML gallery](review/gallery.html)** for subject/variant switching and native-size artwork. For moderated comprehension tests use the [participant-only stimulus](review/participant.html) rather than this gallery: it initially reveals **no subject question, answer, caption or status warning**. The HTML source is intentionally not published through a production site or third-party renderer. On pull requests, CI captures actual Chromium screenshots as a downloadable review artifact, separate from the regular tests.
+**Open the [standalone HTML gallery](review/gallery.html)** for subject/variant switching and native-size artwork. For moderated comprehension tests use the [participant-only stimulus](review/participant.html) rather than this gallery: it initially reveals **no subject question, answer, caption or status warning**. The HTML source is intentionally not published through a production site or third-party renderer. On pull requests, CI captures actual Chromium screenshots as a downloadable review artifact, separate from the regular tests. [Latest 15-frame screenshot artifact](https://github.com/rock-solid-sites/rock-solid-design/actions/runs/40437541342/artifacts/12703699470) includes 320/375/390/768/1024/1440px viewport captures and unprimed participant views.
 
 **Status:** v0.2 visual evaluation proposal. No production claim, standardization, API release, or downstream site deployment. The public 0.1.0 package and its exports stay unchanged.
 

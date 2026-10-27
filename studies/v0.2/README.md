@@ -1,5 +1,7 @@
 # Schematic grammar pilot: structural cutaways vs. neutral diagram baselines
 
+**Open the [standalone HTML gallery](review/gallery.html)** for subject/variant switching and native-size artwork. The HTML source is intentionally not published through a production site or third-party renderer. On pull requests, CI captures actual Chromium screenshots as a downloadable review artifact, separate from the regular tests.
+
 **Status:** v0.2 visual evaluation proposal. No production claim, standardization, API release, or downstream site deployment. The public 0.1.0 package and its exports stay unchanged.
 
 The first four subjects are grounded in an owner-reported hospitality website/booking modernization project, abstracted into anonymous examples. The fifth is a **generic adversarial-review process**, testing the vocabulary outside hospitality. The diagrams are **not screenshots, verified technical topology, or delivery evidence**. Refer to [manifest.json](manifest.json) for audience, question, **per-node lifecycle and evidence status**, relation types and long descriptions. Read the [proposed grammar](../../docs/schematic-grammar-v0.2-proposal.md) and [validation plan](../../docs/research/validation-matrix-2026-10-27.md) before using an image.
@@ -63,7 +65,7 @@ These are 760px-wide **medium/detail illustrations** and should be inspected at 
 
 Use the evaluation matrix: five-second gist, whether connectors are interpreted as confirmed live data flows, historical/planned status, comprehension compared with equivalent short prose, safe text equivalents, shape consistency and project-claim accuracy. None of these checks has been performed with readers yet.
 
-The four diagrams are deliberately different compositions; shared visual cues are bolder black frames, distinctive interface cutaways, straight connections, square attachment marks, warm paper, stepped-gray fills, simple corners, monotone labels, negative space and the inherited site design. No renderer, component API, or reusable SVG symbol definitions have been standardized.
+The five diagrams are deliberately different compositions; shared visual cues are bolder black frames, distinctive interface cutaways, straight connections, square attachment marks, warm paper, stepped-gray fills, simple corners, monotone labels, negative space and the inherited site design. No renderer, component API, or reusable SVG symbol definitions have been standardized.
 
 ### 5. Adversarial review (cross-domain test)
 
@@ -86,3 +88,7 @@ The booking pilot now has three genuinely different levels of visual detail. **T
 | L, 960×440 | ![Detailed booking cutaway with named responsibilities](./tiers/booking-detailed.svg) | Larger case-study cutaway, still not a verified technical topology |
 
 **Critical:** tests have not yet established whether 192px/760px/960px display sizes are suitable in real pages. Future device/browser checks must validate actual size and caption placement. The S tier is an emblem representing dependency, not a complete three-component architecture view. Do not use it to infer an API route.
+
+## External review procedure
+
+Read the [reader-test protocol](../../docs/research/reader-test-protocol-2026-10-27.md) before collecting responses. Rendered CI screenshots can establish the *specific browser output tested*, but not user understanding, visual quality, or accessibility conformance. The spreadsheet-friendly [blank record template](../../docs/research/reader-test-record-template.csv) contains no participant data. Preserve raw answers outside the public repository unless anonymized and permissioned.

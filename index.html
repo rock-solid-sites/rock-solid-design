@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="robots" content="noindex,nofollow">
+<title>Structural cutaways — Rock Solid Design research preview</title>
+<style>
+:root{--paper:#FAFAF8;--ink:#111111;--muted:#454549;--line:#D1D1CE;--surface:#F0F0EE}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;background:var(--paper);color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+body{margin:0;background-color:var(--paper);background-image:linear-gradient(rgba(0,0,0,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(0,0,0,.05) 1px,transparent 1px);background-size:8px 8px}
+a{color:inherit;text-underline-offset:3px}
+a:focus-visible{outline:3px solid #111;outline-offset:4px}
+.wrap{margin-inline:auto;max-width:1520px;padding:clamp(20px,3.5vw,48px)}
+header{border-bottom:1px solid var(--line);padding-block:clamp(28px,5vw,68px) clamp(24px,3vw,42px)}
+.eyebrow,.meta,figcaption,.sub-link,.detail,.nav a,.tag{font:500 12px/1.5 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.02em}
+h1{font-size:clamp(36px,6vw,72px);line-height:1.04;letter-spacing:-.055em;max-width:850px;margin:16px 0 20px}
+.intro{font-size:clamp(17px,2vw,21px);max-width:800px;line-height:1.5;margin:0 0 20px}
+.meta{color:var(--muted);max-width:850px}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0 0}
+.actions a{display:inline-flex;padding:13px 18px;min-height:44px;align-items:center;gap:10px;font-weight:650;text-decoration:none;border:2px solid #111;border-radius:6px;background:#111;color:#FAFAF8}
+.actions a.secondary{background:var(--paper);color:var(--ink)}
+.nav{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 0}
+.nav a{display:inline-block;padding:8px 10px;border:1px solid #BBBDB8;background:var(--paper);border-radius:4px;text-decoration:none}
+.nav a:hover,.sub-link:hover,.detail:hover{text-decoration:underline}
+.study{padding:44px 0 52px;border-bottom:1px solid var(--line)}
+.studyhead{display:flex;gap:18px;justify-content:space-between;align-items:end;margin-bottom:24px}
+h2{font-size:clamp(24px,3vw,36px);line-height:1.15;letter-spacing:-.025em;margin:8px 0}
+.sub{color:#333;font-size:15px;max-width:650px;line-height:1.55;margin:6px 0}
+.detail{white-space:nowrap}
+.comparisons{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px}
+figure{min-width:0;margin:0}
+figcaption{display:flex;justify-content:space-between;align-items:center;gap:10px;padding-bottom:10px}
+figcaption strong{font-family:system-ui,sans-serif;font-size:15px}
+figcaption span{font-size:11px;color:var(--muted)}
+.canvas{display:block;overflow-x:auto;overflow-y:hidden;max-width:100%;border:1px solid #C6C6C3;border-radius:6px;background:#FAFAF8;min-height:215px;scrollbar-color:#777 #EFEFED}
+.canvas img{display:block;width:760px;height:auto;max-width:none}
+.sub-link{display:inline-block;margin-top:12px;font-size:12px}
+.bottom{padding:26px;background:var(--surface);border:1px solid var(--line);border-radius:8px;margin:40px 0 10px}
+.bottom p{max-width:800px;line-height:1.6}
+.variants{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-top:24px}
+.variants a{display:flex;flex-direction:column;gap:8px;text-decoration:none;border:1px solid var(--line);background:var(--paper);border-radius:6px;padding:14px;min-width:0}
+.variants img{display:block;width:100%;height:120px;object-fit:contain;background:var(--paper)}
+.variants span{font-size:13px}
+footer{color:#444;font-size:13px;padding-bottom:35px}
+@media(max-width:830px){.studyhead{display:block}.comparisons{grid-template-columns:1fr}.detail{display:inline-block;margin-top:10px}.variants{grid-template-columns:1fr}.variants a{flex-direction:row;align-items:center}.variants img{width:130px;height:75px}.canvas{min-height:120px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<p class="eyebrow">ROCK SOLID DESIGN / SCHEMATIC LANGUAGE / RESEARCH PREVIEW</p>
+<h1>Explanations with a structural cutaway.</h1>
+<p class="intro">Five small system stories, shown in our exploratory <strong>Treatment C</strong> illustration language alongside conventional labelled diagrams. Compare the shapes and meaning directly in your browser.</p>
+<p class="meta">Research v0.2 · experimental illustrations, not finalized components · some technical states are reported or proposed, not verified production features.</p>
+<div class="actions"><a href="studies/v0.2/review/gallery.html">Explore interactive comparison</a><a class="secondary" href="studies/v0.2/review/participant.html">Open participant-only view</a></div>
+<nav class="nav" aria-label="Jump to study"><a href="#booking-relationship">1. Booking relationship</a><a href="#architecture-pivot">2. Architectural pivot</a><a href="#independent-properties">3. Four independent properties</a><a href="#hms-phase-two">4. HMS second phase</a><a href="#adversarial-review">5. Adversarial review</a><a href="#sizes">Booking sizes</a></nav>
+</div></header>
+<main class="wrap">
+
+<section id="booking-relationship" class="study" aria-labelledby="s0">
+  <div class="studyhead"><div><p class="eyebrow">01 / STUDY</p><h2 id="s0">Booking relationship</h2><p class="sub">How a guest-facing website offers a booking journey that depends on an external reservation account.</p></div><a class="detail" href="studies/v0.2/review/gallery.html?case=booking-relationship&variant=cutaway">Open interactive view ↗</a></div>
+  <div class="comparisons">
+    <figure><figcaption><strong>Treatment C</strong><span>Structural cutaway</span></figcaption><a class="canvas" href="studies/v0.2/booking-relationship.svg" aria-label="View Treatment C Booking relationship SVG at full size"><img loading="eager" src="studies/v0.2/booking-relationship.svg" alt="Booking relationship shown as a bold structural-cutaway illustration" width="760" height="296"></a><a class="sub-link" href="studies/v0.2/booking-relationship.svg">View original at native size</a></figure>
+    <figure><figcaption><strong>Neutral reference</strong><span>Labelled boxes and connections</span></figcaption><a class="canvas" href="studies/v0.2/baselines/booking-relationship.svg" aria-label="View neutral reference Booking relationship SVG at full size"><img loading="eager" src="studies/v0.2/baselines/booking-relationship.svg" alt="Booking relationship shown with simple boxes and connecting lines" width="760" height="296"></a><a class="sub-link" href="studies/v0.2/baselines/booking-relationship.svg">View original at native size</a></figure>
+  </div>
+</section>
+
+<section id="architecture-pivot" class="study" aria-labelledby="s1">
+  <div class="studyhead"><div><p class="eyebrow">02 / STUDY</p><h2 id="s1">Architectural pivot</h2><p class="sub">A decision history: the legacy WordPress/iframe approach, evaluation, and the Astro/API-led direction.</p></div><a class="detail" href="studies/v0.2/review/gallery.html?case=architecture-pivot&variant=cutaway">Open interactive view ↗</a></div>
+  <div class="comparisons">
+    <figure><figcaption><strong>Treatment C</strong><span>Structural cutaway</span></figcaption><a class="canvas" href="studies/v0.2/architecture-pivot.svg" aria-label="View Treatment C Architectural pivot SVG at full size"><img loading="lazy" src="studies/v0.2/architecture-pivot.svg" alt="Architectural pivot shown as a bold structural-cutaway illustration" width="760" height="296"></a><a class="sub-link" href="studies/v0.2/architecture-pivot.svg">View original at native size</a></figure>
+    <figure><figcaption><strong>Neutral reference</strong><span>Labelled boxes and connections</span></figcaption><a class="canvas" href="studies/v0.2/baselines/architecture-pivot.svg" aria-label="View neutral reference Architectural pivot SVG at full size"><img loading="lazy" src="studies/v0.2/baselines/architecture-pivot.svg" alt="Architectural pivot shown with simple boxes and connecting lines" width="760" height="296"></a><a class="sub-link" href="studies/v0.2/baselines/architecture-pivot.svg">View original at native size</a></figure>
+  </div>
+</section>
+
+<section id="independent-properties" class="study" aria-labelledby="s2">
+  <div class="studyhead"><div><p class="eyebrow">03 / STUDY</p><h2 id="s2">Four independent properties</h2><p class="sub">Four distinct property interfaces and their independent reservation accounts.</p></div><a class="detail" href="studies/v0.2/review/gallery.html?case=independent-properties&variant=cutaway">Open interactive view ↗</a></div>
+  <div class="comparisons">
+    <figure><figcaption><strong>Treatment C</strong><span>Structural cutaway</span></figcaption><a class="canvas" href="studies/v0.2/independent-properties.svg" aria-label="View Treatment C Four independent properties SVG at full size"><img loading="lazy" src="studies/v0.2/independent-properties.svg" alt="Four independent properties shown as a bold structural-cutaway illustration" width="760" height="296"></a><a class="sub-link" href="studies/v0.2/independent-properties.svg">View original at native size</a></figure>
+    <figure><figcaption><strong>Neutral reference</strong><span>Labelled boxes and connections</span></figcaption><a class="canvas" href="studies/v0.2/baselines/independent-properties.svg" aria-label="View neutral reference Four independent properties SVG at full size"><img loading="lazy" src="studies/v0.2/baselines/independent-properties.svg" alt="Four independent properties shown with simple boxes and connecting lines" width="760" height="296"></a><a class="sub-link" href="studies/v0.2/baselines/independent-properties.svg">View original at native size</a></figure>
+  </div>
+</section>
+
+<section id="hms-phase-two" class="study" aria-labelledby="s3">
+  <div class="studyhead"><div><p class="eyebrow">04 / STUDY</p><h2 id="s3">HMS second phase</h2><p class="sub">Site and booking work beside an HMS workstream that remains in development.</p></div><a class="detail" href="studies/v0.2/review/gallery.html?case=hms-phase-two&variant=cutaway">Open interactive view ↗</a></div>
+  <div class="comparisons">
+    <figure><figcaption><strong>Treatment C</strong><span>Structural cutaway</span></figcaption><a class="canvas" href="studies/v0.2/hms-phase-two.svg" aria-label="View Treatment C HMS second phase SVG at full size"><img loading="lazy" src="studies/v0.2/hms-phase-two.svg" alt="HMS second phase shown as a bold structural-cutaway illustration" width="760" height="296"></a><a class="sub-link" href="studies/v0.2/hms-phase-two.svg">View original at native size</a></figure>
+    <figure><figcaption><strong>Neutral reference</strong><span>Labelled boxes and connections</span></figcaption><a class="canvas" href="studies/v0.2/baselines/hms-phase-two.svg" aria-label="View neutral reference HMS second phase SVG at full size"><img loading="lazy" src="studies/v0.2/baselines/hms-phase-two.svg" alt="HMS second phase shown with simple boxes and connecting lines" width="760" height="296"></a><a class="sub-link" href="studies/v0.2/baselines/hms-phase-two.svg">View original at native size</a></figure>
+  </div>
+</section>
+
+<section id="adversarial-review" class="study" aria-labelledby="s4">
+  <div class="studyhead"><div><p class="eyebrow">05 / STUDY</p><h2 id="s4">Adversarial review</h2><p class="sub">Builder, independent challenge, and evidence verification as separate responsibilities.</p></div><a class="detail" href="studies/v0.2/review/gallery.html?case=adversarial-review&variant=cutaway">Open interactive view ↗</a></div>
+  <div class="comparisons">
+    <figure><figcaption><strong>Treatment C</strong><span>Structural cutaway</span></figcaption><a class="canvas" href="studies/v0.2/adversarial-review.svg" aria-label="View Treatment C Adversarial review SVG at full size"><img loading="lazy" src="studies/v0.2/adversarial-review.svg" alt="Adversarial review shown as a bold structural-cutaway illustration" width="760" height="296"></a><a class="sub-link" href="studies/v0.2/adversarial-review.svg">View original at native size</a></figure>
+    <figure><figcaption><strong>Neutral reference</strong><span>Labelled boxes and connections</span></figcaption><a class="canvas" href="studies/v0.2/baselines/adversarial-review.svg" aria-label="View neutral reference Adversarial review SVG at full size"><img loading="lazy" src="studies/v0.2/baselines/adversarial-review.svg" alt="Adversarial review shown with simple boxes and connecting lines" width="760" height="296"></a><a class="sub-link" href="studies/v0.2/baselines/adversarial-review.svg">View original at native size</a></figure>
+  </div>
+</section>
+<section id="sizes" class="study" aria-labelledby="sizesTitle">
+<p class="eyebrow">S / M / L / THREE DISTINCT COMPOSITIONS</p>
+<h2 id="sizesTitle">The booking illustration at different sizes</h2>
+<p>Each size is drawn with different levels of detail. Small is not a compressed version of large. Select an illustration to open it at native size.</p>
+<div class="variants">
+ <a href="studies/v0.2/tiers/booking-compact.svg"><img src="studies/v0.2/tiers/booking-compact.svg" width="192" height="136" alt="Small cutaway: webpage linked to reservation service"><span><strong>Small · 192px</strong><br>Compact, simplified emblem</span></a>
+ <a href="studies/v0.2/booking-relationship.svg"><img src="studies/v0.2/booking-relationship.svg" width="760" height="296" alt="Medium cutaway: three responsibilities"><span><strong>Medium · 760px</strong><br>Three parts, two labelled relationships</span></a>
+ <a href="studies/v0.2/tiers/booking-detailed.svg"><img src="studies/v0.2/tiers/booking-detailed.svg" width="960" height="440" alt="Detailed cutaway: website, booking experience and account"><span><strong>Large · 960px</strong><br>Selective details and responsibility boundaries</span></a>
+</div>
+</section>
+<div class="bottom"><p class="eyebrow">RESEARCH / NOT A PACKAGE RELEASE</p><h2>What these drawings do—and do not—establish.</h2><p>Lines communicate responsibilities, dependencies or process stages, not automatically confirmed network traffic. Proposed HMS functions are not deployed features. Visual comprehension, responsive clarity and accessibility are under review. Neither the public package v0.1 nor the private production website is modified by this preview.</p><p><a href="https://github.com/rock-solid-sites/rock-solid-design/pull/1">Research draft PR</a> · <a href="studies/v0.2/manifest.json">Source-of-truth study notes</a> · <a href="docs/research/reader-test-protocol-2026-10-27.md">Reader testing protocol</a></p></div>
+</main>
+<footer class="wrap">© Rock Solid Sites · Experimental open-source illustration research.</footer>
+</body>
+</html>

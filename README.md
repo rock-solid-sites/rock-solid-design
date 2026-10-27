@@ -30,6 +30,10 @@ The font tokens assume the consumer provides `--font-geist` and `--font-geist-mo
 
 The public library owns visual rules and reusable graphics. Consumer projects own content, real architecture claims, semantic meaning, application behavior, accessibility audits, and infrastructure.
 
+## Design-session handoffs
+
+- [27 October 2026 — session-end routing index](docs/session-handoffs/2026-10-27/README.md) covering the **Site Design**, **Layout and Voice**, **Logo**, and **Schematic System** workstreams and their shared design-system infrastructure. These are status/research notes, not newly approved standards.
+
 ## Contribution and licensing
 
 MIT licensed. Logos, names and trademarks remain the property of their owners; the permission to reuse the code or generic illustrations does **not** imply endorsement or trademark permission. No third-party font binaries, proprietary client designs or private editorial material are included. See `CONTRIBUTING.md` and `LICENSE`.

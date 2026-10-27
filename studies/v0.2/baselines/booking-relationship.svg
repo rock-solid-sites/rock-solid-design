@@ -17,6 +17,8 @@
   <path d="M24 44H736" class="guide"/>
 <g><text x="24" y="28" class="muted" >SCHEMATIC STUDY / 01</text><text x="736" y="28" class="muted" text-anchor="end">BOOKING RELATIONSHIP</text>
 <rect x="24" y="98" width="202" height="90" rx="0" stroke="#111111" stroke-width="1.5" fill="#FAFAF8"/><rect x="280" y="98" width="202" height="90" rx="0" stroke="#111111" stroke-width="1.5" fill="#FAFAF8"/><rect x="534" y="98" width="202" height="90" rx="0" stroke="#111111" stroke-width="1.5" fill="#FAFAF8"/>
+<text x="253" y="129" class="micro" text-anchor="middle">OFFERS</text>
+<text x="507" y="129" class="micro" text-anchor="middle">REQUIRES</text>
 <path d="M226 143H280M482 143H534" stroke="#111111" stroke-width="1.5" fill="none"/>
 <text x="125" y="142" class="label" text-anchor="middle">PROPERTY WEBSITE</text>
 <text x="381" y="142" class="label" text-anchor="middle">BOOKING EXPERIENCE</text>

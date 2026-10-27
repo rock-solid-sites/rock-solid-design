@@ -54,6 +54,14 @@ test('neutral references use unbiased headings and do not stroke text by inherit
     assert.match(baseline,/<rect[^>]+stroke="#111111" stroke-width="1.5" fill="#FAFAF8"\/>/);
   }
   assert.doesNotMatch(read('studies/v0.2/architecture-pivot.svg'),/stroke-dasharray/);
-  assert.match(read('studies/v0.2/booking-relationship.svg'),/>BOOKING<\/text>/);
-  assert.match(read('studies/v0.2/booking-relationship.svg'),/>ACCOUNT<\/text>/);
+  assert.match(read('studies/v0.2/booking-relationship.svg'),/>OFFERS<\/text>/);
+  assert.match(read('studies/v0.2/booking-relationship.svg'),/>REQUIRES<\/text>/);
+});
+
+test('both booking-study treatments include the same locally visible relationship actions',()=>{
+  for(const root of ['studies/v0.2','studies/v0.2/baselines']){
+    const s=read(root+'/booking-relationship.svg');
+    assert.match(s,/>OFFERS<\/text>/);
+    assert.match(s,/>REQUIRES<\/text>/);
+  }
 });

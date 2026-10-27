@@ -39,8 +39,8 @@
 <rect x="557" y="165" width="154" height="18" rx="3" fill="#FAFAF8" stroke="#111111" stroke-width="2"/>
 <text x="635" y="226" class="label" text-anchor="middle">RESERVATIONS</text>
 <text x="635" y="245" class="micro" text-anchor="middle">External service / account</text>
-<text x="253" y="129" class="micro" text-anchor="middle">BOOKING</text>
-<text x="507" y="129" class="micro" text-anchor="middle">ACCOUNT</text>
+<text x="253" y="129" class="micro" text-anchor="middle">OFFERS</text>
+<text x="507" y="129" class="micro" text-anchor="middle">REQUIRES</text>
 <path d="M226 140H280M480 140H534" class="link"/>
 <rect x="221" y="135" width="10" height="10" rx="1" class="fill"/>
 <rect x="475" y="135" width="10" height="10" rx="1" class="fill"/>

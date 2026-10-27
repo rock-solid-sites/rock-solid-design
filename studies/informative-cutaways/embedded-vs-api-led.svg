@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 820" role="img" aria-labelledby="t d">
+<title id="t">Who controls the guest-facing booking experience? Current embedded Beds24 form versus custom API-led direction</title>
+<desc id="d">Two parallel cutaways compare the current Astro property site opening a Beds24 hosted guest-details form, and a proposed custom guest form controlled by the site while keeping Beds24 as a reservation service. A solid black path starts within a Book Now button and ends at a Continue button. Filled squares anchor the start and end. A dotted amber connection from the proposed custom form to a blue external service marks the planned but not deployed API interface. No actual direct API connection is claimed.</desc>
+<defs>
+<pattern id="g" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M8 0H0V8" stroke="#111111" stroke-opacity=".035" fill="none"/></pattern>
+<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#111111"/></marker>
+<marker id="futurearrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#A67A40"/></marker>
+</defs>
+<style>
+.frame{fill:#FAFAF8;stroke:#111111;stroke-width:4;stroke-linejoin:round}
+.fill{fill:#111111}.light{fill:#E1E1DE}
+.external{fill:#E1E9ED;stroke:#4C7083;stroke-width:2.5}
+.future{fill:#F2EADD;stroke:#A67A40;stroke-width:2.5}
+.solid{fill:none;stroke:#111111;stroke-width:4;stroke-linecap:square;stroke-linejoin:round}
+.dashed{fill:none;stroke:#A67A40;stroke-width:3.5;stroke-linecap:round;stroke-dasharray:4 9}
+.head{font:750 27px system-ui,sans-serif;fill:#111111}
+.label{font:725 18px system-ui,sans-serif;fill:#111111}
+.small{font:500 14px system-ui,sans-serif;fill:#111111}
+.white{font:750 15px system-ui,sans-serif;fill:#FAFAF8}
+.mono{font:650 12px ui-monospace,Consolas,monospace;fill:#111111}
+.whiteMono{font:650 12px ui-monospace,Consolas,monospace;fill:#FAFAF8}
+.blueText{font:700 14px system-ui,sans-serif;fill:#4C7083}
+.amberText{font:700 14px system-ui,sans-serif;fill:#805C2B}
+.dim{font:550 12px ui-monospace,Consolas,monospace;fill:#4D4D50}
+</style>
+<rect width="1280" height="820" fill="#FAFAF8"/><rect width="1280" height="820" fill="url(#g)"/>
+<text x="36" y="38" class="mono" >TREATMENT C / INTERFACE CONTROL / 02</text>
+<text x="36" y="78" class="head" >Who owns the guest experience?</text>
+<text x="36" y="103" class="small" >The current hosted Beds24 form, compared with the API-led direction</text>
+<path d="M36 122H1244" stroke="#CECECB"/>
+<rect x="35" y="136" width="530" height="29" rx="4" class="external"/>
+<text x="50" y="157" class="blueText" >CURRENT / ASTRO + EMBEDDED BEDS24 FORM</text>
+<text x="1241" y="157" class="mono" text-anchor="end">GUEST-FORM UI: HOSTED BY BEDS24</text>
+<rect x="35" y="177" width="337" height="217" rx="5" class="frame"/><rect x="37" y="179" width="333" height="27" rx="3" class="fill"/><text x="49" y="197" class="whiteMono" >ASTRO PROPERTY PAGE</text>
+<text x="57" y="237" class="label" >Property website</text>
+<text x="57" y="264" class="small" >Guest selects room and dates</text>
+<rect x="56" y="294" width="271" height="43" rx="4" class="fill"/>
+<text x="192" y="322" class="white" text-anchor="middle">BOOK NOW</text>
+<text x="55" y="369" class="dim" >SITE CONTROLS ENTRY PAGE</text>
+<rect x="675" y="177" width="567" height="217" rx="5" class="frame"/><rect x="677" y="179" width="563" height="27" rx="3" class="fill"/><text x="689" y="197" class="whiteMono" >BEDS24 / EMBEDDED HOSTED GUEST FORM</text>
+<rect x="696" y="225" width="525" height="145" rx="4" class="external"/>
+<text x="711" y="248" class="blueText" >EXTERNAL INTERFACE BOUNDARY</text>
+<text x="711" y="269" class="small" >Guest form fields and rules originate in Beds24</text>
+<rect x="714" y="302" width="185" height="36" rx="4" fill="#4C7083"/>
+<text x="806" y="326" class="white" text-anchor="middle">CONTINUE</text>
+<rect x="950" y="287" width="252" height="60" rx="4" fill="#FAFAF8" stroke="#4C7083" stroke-width="2"/>
+<text x="1076" y="311" class="blueText" text-anchor="middle">RESERVATION ACCOUNT</text>
+<text x="1076" y="333" class="small" text-anchor="middle">Beds24 service</text>
+<path d="M327 316H468V320H713" class="solid" marker-end="url(#arrow)"/>
+<rect x="320" y="309" width="14" height="14" rx="1.5" fill="#111111" stroke="#FAFAF8" stroke-width="2"/><rect x="707" y="313" width="14" height="14" rx="1.5" fill="#4C7083" stroke="#FAFAF8" stroke-width="2"/>
+<text x="537" y="296" class="mono" text-anchor="middle">OPENS HOSTED FORM</text>
+<path d="M36 415H1244" stroke="#CECECB"/>
+<rect x="35" y="433" width="543" height="30" rx="4" class="future"/>
+<text x="50" y="455" class="amberText" >PROPOSED / CUSTOM UI + DIRECT API</text>
+<text x="1241" y="455" class="mono" text-anchor="end">DESIGN DIRECTION / NOT DEPLOYED</text>
+<rect x="35" y="476" width="337" height="218" rx="5" class="frame"/><rect x="37" y="478" width="333" height="27" rx="3" class="fill"/><text x="49" y="496" class="whiteMono" >ASTRO PROPERTY PAGE</text>
+<text x="57" y="538" class="label" >Property website</text>
+<text x="57" y="563" class="small" >Booking entry still site-owned</text>
+<rect x="56" y="602" width="271" height="43" rx="4" class="fill"/>
+<text x="192" y="630" class="white" text-anchor="middle">BOOK NOW</text>
+<text x="55" y="667" class="dim" >SITE CONTROLS ENTRY PAGE</text>
+<rect x="675" y="476" width="567" height="218" rx="5" class="frame"/><rect x="677" y="478" width="563" height="27" rx="3" class="fill"/><text x="689" y="496" class="whiteMono" >CUSTOM FORM / SITE-CONTROLLED INTERFACE</text>
+<rect x="696" y="522" width="277" height="145" rx="4" class="frame"/>
+<text x="715" y="547" class="mono" >GUEST DETAILS / SITE UI</text>
+<rect x="714" y="559" width="235" height="14" rx="2" class="light"/>
+<rect x="714" y="579" width="235" height="14" rx="2" class="light"/>
+<rect x="714" y="616" width="212" height="35" rx="3" class="fill"/>
+<text x="820" y="639" class="white" text-anchor="middle">CONTINUE</text>
+<rect x="996" y="522" width="226" height="145" rx="4" class="external"/>
+<text x="1011" y="548" class="blueText" >BEDS24 ACCOUNT</text>
+<text x="1011" y="573" class="small" >External reservation</text>
+<text x="1011" y="593" class="small" >data and rules</text>
+<rect x="1012" y="612" width="183" height="36" rx="3" fill="#4C7083"/>
+<text x="1103" y="636" class="white" text-anchor="middle">API SERVICE</text>
+<path d="M327 623H475V634H711" class="solid" marker-end="url(#arrow)"/>
+<rect x="320" y="616" width="14" height="14" rx="1.5" fill="#111111" stroke="#FAFAF8" stroke-width="2"/><rect x="707" y="627" width="14" height="14" rx="1.5" fill="#111111" stroke="#FAFAF8" stroke-width="2"/>
+<text x="526" y="604" class="mono" text-anchor="middle">ENTERS SITE FORM</text>
+<path d="M930 632H1011" class="dashed" marker-end="url(#futurearrow)"/>
+<rect x="925" y="625" width="14" height="14" rx="1.5" fill="#A67A40" stroke="#FAFAF8" stroke-width="2"/><rect x="1004" y="625" width="14" height="14" rx="1.5" fill="#4C7083" stroke="#FAFAF8" stroke-width="2"/>
+<text x="965" y="606" class="amberText" text-anchor="middle">PLANNED</text>
+<path d="M36 721H1244" stroke="#CECECB"/>
+<rect x="41" y="742" width="14" height="14" rx="1.5" fill="#111111" stroke="#FAFAF8" stroke-width="2"/><text x="67" y="754" class="small" >User action point</text>
+<rect x="235" y="742" width="14" height="14" rx="1.5" fill="#4C7083" stroke="#FAFAF8" stroke-width="2"/><text x="262" y="754" class="small" >External service / control point</text>
+<path d="M608 749H666" class="dashed"/>
+<text x="681" y="754" class="small" >Planned link, not deployed</text>
+<text x="36" y="793" class="dim" >Both approaches retain Beds24 as the external reservation service.</text>
+<text x="1242" y="793" class="dim" text-anchor="end">CUSTOM API INTEGRATION IS UNDER DEVELOPMENT</text>
+</svg>

@@ -1,6 +1,6 @@
 # Treatment C — reader test protocol (27 October 2026)
 
-**Status:** Protocol only. No participant testing has been performed. No evidence of improved comprehension or accessibility conformance is claimed. This protocol complements [the evaluation matrix](validation-matrix-2026-10-27.md) and the [review gallery](../../studies/v0.2/review/gallery.html).
+**Status:** Protocol only. No participant testing has been performed. No evidence of improved comprehension or accessibility conformance is claimed. This protocol complements [the evaluation matrix](validation-matrix-2026-10-27.md), the [facilitator's gallery](../../studies/v0.2/review/gallery.html), and the **[participant-only stimulus](../../studies/v0.2/review/participant.html)**. The gallery visibly displays the question and caveats and must not be used for a blind first impression.
 
 ## Hypothesis and risks
 
@@ -27,12 +27,12 @@ Counterbalance condition order across the six permutations C-N-P, C-P-N, N-C-P, 
 ## Procedure, one subject at a time
 
 1. Ask what the participant expects from a drawing of a system relationship, before presenting it.
-2. Show the assigned condition for **five seconds**, with its main canvas visible; conceal the caption during the initial exposure. Ask them to say what the image or text is about without prompting.
+2. Open `participant.html?case=booking-relationship&variant=cutaway&size=M` (substitute the assigned subject and condition) as the **only visible surface**. The browser address bar should not expose an unblinded treatment label to the participant; fullscreen where feasible. Show the assigned condition for **five seconds**, with its main canvas visible; this page does not show the caption, question, or status warning during initial exposure. Ask them to say what the image or text is about without prompting.
 3. Ask: **What does each line or arrow mean?** Can they identify a real API, a dependency, or a chronological decision? Allow “not enough information” as a correct answer.
 4. Ask: **Which parts are historical, currently in development, proposed, or actually operating?** Give no feedback yet. Wrong assumptions about “already shipped” should be recorded verbatim.
 5. Provide the shared caption and qualifier, then ask them to summarize the explanation in their own words.
 6. Ask whether the presentation added information or introduced ambiguity relative to the plain-language explanation.
-7. For accessibility review, separately inspect keyboard order and browser/screen-reader announcement of the SVG title, description and nearby caption.
+7. For accessibility review, separately inspect keyboard order and browser/screen-reader announcement of the SVG title, description and nearby caption. The stimulus deliberately provides a meaningful `img alt` string: a screen-reader encounter therefore cannot be treated as visually blinded or directly comparable to a five-second visual-only trial.
 
 ## Recording
 
@@ -53,3 +53,7 @@ Text at 11px on a 760px source would become approximately **4.6px at 320px** if 
 ## Publication boundaries
 
 Treat all project-specific examples as **reported concepts**, not verified architecture. No user-testing dataset is publicly present. Screenshots from CI support rendering reproducibility; they cannot substitute for actual visual inspection or reader comprehension testing. Do not merge the diagram package on the strength of test runners alone.
+
+## Reader-test caveat
+
+On screens narrower than the native 760px image, horizontal scrolling is necessary for the M-tier; this is **not** a valid five-second view of the entire figure. Restrict the first mobile trial to the booking S-tier with its own 192px composition until mobile-specific versions of the other studies are authored. The participant page has no analytics, persistence or remote submissions.

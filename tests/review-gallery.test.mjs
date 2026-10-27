@@ -19,3 +19,12 @@ test('reader-test protocol is honest about missing participants and publication 
  assert.match(s,/five seconds/);
  assert.match(s,/200% zoom/);
 });
+
+test('participant stimulus avoids pre-exposure subject explanation and hides evaluator controls',()=>{
+  const page=read('studies/v0.2/review/participant.html');
+  assert.match(page,/No pre-exposure title, warning or visible answer/);
+  assert.match(page,/new URLSearchParams/);
+  assert.match(page,/variant==='prose'/);
+  assert.doesNotMatch(page,/id="subjectQuestion"|id="figcap"|data-variant="cutaway"/);
+  assert.doesNotMatch(page,/<button/);
+});

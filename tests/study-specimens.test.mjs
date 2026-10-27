@@ -65,3 +65,23 @@ test('both booking-study treatments include the same locally visible relationshi
     assert.match(s,/>REQUIRES<\/text>/);
   }
 });
+
+test('each illustrated node and relation has an explicit evidence and lifecycle record',()=>{
+  const statuses=new Set(manifest.lifecycleVocabulary);
+  for(const study of manifest.studies){
+    assert.ok(Array.isArray(study.nodes)&&study.nodes.length>0);
+    const ids=new Set();
+    for(const node of study.nodes){
+      assert.ok(node.id&&!ids.has(node.id));
+      ids.add(node.id);
+      assert.ok(statuses.has(node.lifecycle),'Unknown node status: '+node.lifecycle);
+      assert.ok(node.sourceStatus&&node.note);
+    }
+    for(const rel of study.relations){
+      assert.ok(ids.has(rel.from)&&ids.has(rel.to),'Unknown endpoint in '+study.id);
+      assert.ok(rel.label&&rel.transport);
+      assert.equal(rel.transport,'not-asserted');
+    }
+    assert.equal(study.lifecycle,undefined,'Ambiguous study-wide lifecycle should not remain');
+  }
+});

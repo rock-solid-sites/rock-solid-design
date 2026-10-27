@@ -36,11 +36,11 @@ Use CSS variables or an SVG-renderer token map for **new** work. The existing v0
 
 ## Semantics: do not confuse appearance with status
 
-The relationship type and lifecycle status must be **explicitly expressed**, not inferred from a line's color, fill or stroke alone.
+The relationship type and lifecycle status must be **explicitly expressed**, not inferred from a line's color, fill or stroke alone. Every connection stores a label, relation kind, direction and explicit transport assertion state (`not-asserted` unless supported). **A filled black rectangle may be chrome, an emphasis block or a module; it says nothing about project lifecycle.**
 
 - `relationship.kind`: `technical-interface`, `process-step`, `business-association`, `dependency`, `comparison`. A conceptual relationship is not evidence of automated data transfer.
 - `relationship.direction`: `outbound`, `inbound`, `bidirectional`, or `not-applicable`; add a visible arrow and action label for flows. Bidirectional flows may require two separate directional paths.
-- `node.lifecycle`: `historical`, `evaluated`, `implemented`, `in-development`, `proposed` (values are provisional). Keep lifecycle separate from visual importance and separate from whether this content is independently verified.
+- `node.lifecycle`: one of `historical`, `evaluated`, `selected-direction`, `reported-current`, `in-development`, `proposed`, `not-asserted`, `illustrative` for the pilot. `reported-current` reflects owner report, not independently confirmed technical status; `selected-direction` records a decision, not deployment. **Do not use `implemented` without independent evidence.** Keep lifecycle separate from visual emphasis and the evidence/source status. Each node in the manifest has an ID, role, lifecycle, source status and note.
 - `node.evidence`: optional citation/link/reference and verification date; required for actual architecture or performance claims before external publication.
 - `diagram.truthMode`: `generic-example`, `reported-project`, `verified-architecture`, `future-concept`. Generic examples carry visible `CONCEPT STUDY` labelling where the viewer might mistake them for real deployments.
 - Boundary styles distinguish ownership/scope, not automatically “live” vs “planned”; a planning state needs explicit words such as `PHASE 2 / PROPOSED`.
@@ -94,3 +94,9 @@ Every meaningful diagram needs a short readable identifier. Complex diagrams mus
 Separate reusable visual primitives and data conventions from a renderer. For early versions, author **standalone SVG** and an optional machine-readable diagram descriptor; avoid building a complex DSL or automatic layout system prematurely. After 3–5 genuinely different diagrams exist, extract tested primitives, not imagined generic components.
 
 The website remains the only private production repo and consumes a pinned released design-package revision. No automatic publication of v0.2 or changes to private site, public package version, tokens, README claim or production preview is implied by adopting a research proposal.
+
+## Pilot semantics implementation note (27 October 2026)
+
+The research manifest now supplies **per-node** lifecycle/evidence metadata and per-relationship labels/transport status. These are metadata conventions, **not** a formal renderer schema or enforcement that all semantic fields are visible in each SVG. A product-quality diagram must show any implementation-state distinction whose misreading would matter to the viewer in adjacent copy or explicit on-canvas labels; metadata alone is insufficient. No specific network link or installed protocol is asserted by the booking and property pilots.
+
+The SVG studies intentionally use `system-ui` and `ui-monospace` fallback fonts to stay standalone and avoid bundling font files. A future site-based renderer can inherit Geist/Geist Mono; font substitution must be checked visually before a release. This is not a claim of visual parity.

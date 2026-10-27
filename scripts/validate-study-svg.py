@@ -14,7 +14,7 @@ NS = "{http://www.w3.org/2000/svg}"
 BLOCKED = {"script", "foreignObject", "image", "animate", "animateTransform", "set"}
 manifest = json.loads((FOLDER / "manifest.json").read_text(encoding="utf-8"))
 cases = manifest["studies"]
-assert len(cases) == 5 and len({x["id"] for x in cases}) == 4
+assert len(cases) == 5 and len({x["id"] for x in cases}) == 5
 checked = 0
 for case in cases:
     for base in (FOLDER, FOLDER / "baselines"):

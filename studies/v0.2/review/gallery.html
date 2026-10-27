@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Rock Solid Design — Treatment C schematic evaluation gallery</title>
+<style>
+:root{--paper:#FAFAF8;--ink:#111111;--line:#CBCBC8;--soft:#E8E8E6;--muted:#48484C;--max:1152px;color-scheme:light}
+*{box-sizing:border-box}
+html{font:16px/1.55 system-ui,-apple-system,sans-serif;background:var(--paper);color:var(--ink)}
+body{margin:0;background-color:var(--paper);background-image:linear-gradient(rgba(0,0,0,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(0,0,0,.05) 1px,transparent 1px);background-size:8px 8px}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid #111;outline-offset:3px}
+.wrap{max-width:var(--max);margin:auto;padding:clamp(20px,4vw,48px)}
+h1{font-size:clamp(28px,4vw,47px);line-height:1.08;letter-spacing:-.055em;margin:12px 0 20px;max-width:800px}
+h2{font-size:clamp(21px,2.5vw,30px);line-height:1.2;letter-spacing:-.025em}
+p{max-width:74ch}
+.eyebrow,.meta,.status,.hint,.control-label,.figure-note{font:500 11px/1.5 ui-monospace,monospace;letter-spacing:.035em}
+header{border-bottom:1px solid var(--line)}
+header p{color:#36363A}
+.meta{color:#505056}
+.grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:26px}
+.toolbar{display:grid;gap:18px;margin:22px 0;padding:16px 18px;background:#F0F0EE;border:1px solid #D3D3D0;border-radius:8px}
+.controls{display:flex;flex-wrap:wrap;gap:8px}
+button{font:600 13px/1.2 system-ui,sans-serif;padding:12px 15px;border:1.5px solid #111;background:var(--paper);color:#111;border-radius:5px;cursor:pointer;min-height:44px}
+button[aria-pressed="true"]{background:#111;color:#FAFAF8}
+button:hover{box-shadow:inset 0 0 0 1px #111}
+.subtitle{font-size:18px;font-weight:650;margin:10px 0 3px}
+.stage{margin-top:20px;border:1px solid #CECECB;border-radius:8px;padding:18px;background:#FAFAF8;min-width:0}
+.stage .paper{margin:12px 0 10px;background:#FAFAF8;overflow-x:auto;overflow-y:hidden;scrollbar-gutter:stable;padding:0 0 10px}
+.stage img{height:auto;width:760px;max-width:none;display:block;border:0}
+.stage[data-display="large"] img{width:960px}
+.stage[data-display="compact"] img{width:192px}
+.stage[data-display="prose"] .paper{display:none}
+.stage[data-display="prose"] .prose{display:block}
+.prose{display:none;border-top:3px solid #111;padding:24px 8px;max-width:620px;font-size:19px;min-height:225px}
+.figcap{font-size:14px;max-width:760px}
+.figure-note{color:#444;max-width:760px}
+.notes{border-top:1px solid var(--line);margin-top:38px;padding-top:12px}
+.small{font-size:13px;color:#4C4C52}
+.support{margin-top:40px;border:1px solid #111;border-radius:8px;background:#F0F0EE;padding:20px 24px}
+.support h2{font-size:22px}
+.panel-links{display:flex;gap:20px;flex-wrap:wrap;font-size:14px}
+table{border-collapse:collapse;width:100%}
+td,th{text-align:left;padding:10px 12px;border-bottom:1px solid #CECECB;vertical-align:top}
+th{font-size:13px}
+.mono{font-family:ui-monospace,monospace}
+#nativeNote{font-size:13px;color:#38383C}
+@media(max-width:650px){
+  .wrap{padding:20px}
+  .grid{grid-template-columns:1fr}
+  .toolbar{padding:12px}
+  .stage{padding:12px}
+  .stage[data-display="compact"] img{width:192px}
+  .paper{scrollbar-color:#555 #EEE}
+  h1{font-size:32px}
+  .support{padding:16px}
+}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+@media print{
+  .toolbar{display:none}body{background-image:none}.stage .paper{overflow:visible}.stage img{max-width:100%}
+}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <p class="eyebrow">ROCK SOLID DESIGN / RESEARCH / 2026-10-27</p>
+  <h1>Structural cutaway: visual evaluation</h1>
+  <p>Compare Treatment C, a plain boxes-and-arrows reference, and an equivalent prose explanation. This is a <strong>study gallery</strong>, not a production specification or evidence that an integration is deployed.</p>
+  <p class="meta">Standalone HTML · Five concepts · 760px reference art · Compact and detailed booking derivatives</p>
+</div></header>
+<main class="wrap">
+<section aria-label="Review controls" class="toolbar">
+  <div><div class="control-label">01 / CHOOSE SUBJECT</div><div class="controls" id="subjects" role="group" aria-label="Subject"><button type="button" data-case="booking-relationship" aria-pressed="true">1. Booking relationship</button><button type="button" data-case="architecture-pivot" aria-pressed="false">2. Architectural pivot</button><button type="button" data-case="independent-properties" aria-pressed="false">3. Independent property experiences</button><button type="button" data-case="hms-phase-two" aria-pressed="false">4. HMS expansion</button><button type="button" data-case="adversarial-review" aria-pressed="false">5. Adversarial review</button></div></div>
+  <div class="grid">
+    <div><div class="control-label">02 / CHOOSE PRESENTATION</div><div class="controls" id="variants" role="group" aria-label="Presentation"><button type="button" data-variant="cutaway" aria-pressed="true">Treatment C</button><button type="button" data-variant="neutral" aria-pressed="false">Neutral</button><button type="button" data-variant="prose" aria-pressed="false">Prose</button></div></div>
+    <div><div class="control-label">03 / BOOKING SIZE STUDY</div><div class="controls" id="sizes" role="group" aria-label="Booking artwork size"><button type="button" data-size="M" aria-pressed="true">M · 760</button><button type="button" data-size="S" aria-pressed="false">S · 192</button><button type="button" data-size="L" aria-pressed="false">L · 960</button></div><p class="small">S and L are separate compositions, not scaled versions. Other subjects currently have M only.</p></div>
+  </div>
+</section>
+<section aria-labelledby="subjectTitle">
+  <p class="eyebrow" id="subjectNumber">STUDY / 01</p>
+  <h2 id="subjectTitle">Booking relationship</h2>
+  <p class="subtitle" id="subjectQuestion">How does a booking journey depend on an external reservation service?</p>
+  <p id="subjectWarning" class="small">Conceptual responsibility links, not confirmed API or data transport.</p>
+  <div class="stage" id="stage" data-display="M">
+    <div class="control-label" id="stateName">TREATMENT C · M / 760px native reference</div>
+    <div class="paper"><img id="picture" src="../booking-relationship.svg" width="760" height="296" alt="Property website, booking journey and a separate reservation service linked as conceptual responsibilities"></div>
+    <div class="prose" id="prose">The website offers a booking experience that depends on a separate reservations service. No technical connection is verified.</div>
+    <p class="figcap" id="figcap">The website offers a booking experience that depends on a separate reservations service. No technical connection is verified.</p>
+    <div class="panel-links"><a id="asset" href="../booking-relationship.svg">Open original SVG</a><a href="../README.md">Study descriptions</a><a href="../manifest.json">Source metadata</a></div>
+    <p id="nativeNote" class="figure-note">Full-size illustration is shown at 760px inside a horizontally scrollable frame where necessary. Do not mistake a shrunken image for a mobile variant.</p>
+  </div>
+</section>
+<section class="support" aria-labelledby="observationsTitle">
+  <h2 id="observationsTitle">What should a reader understand?</h2>
+  <p>Before revealing the caption, show one randomized condition for five seconds. Record the viewer's answer to the main question, what they think the connector represents, and which parts they believe already exist. Then ask what information, if any, the graphic added beyond the prose.</p>
+  <p class="small">No reader outcomes have been collected by this gallery. It does not submit responses or access private information.</p>
+  <p class="panel-links"><a href="../../../docs/research/validation-matrix-2026-10-27.md">Evaluation matrix</a><a href="../../../docs/research/reader-test-protocol-2026-10-27.md">Reader-test protocol</a></p>
+</section>
+<section class="notes">
+  <h2>Display-size constraints</h2>
+  <table>
+    <thead><tr><th>Context</th><th>Study constraint</th></tr></thead>
+    <tbody><tr><td>320–390px mobile</td><td>Booking uses the separately composed 192px emblem. Other 760px studies retain native size in a scrollable research frame, with readable adjacent explanation.</td></tr>
+    <tr><td>760px medium</td><td>Review the 760×296 SVG at native width. Labels are not intended for wholesale reduction.</td></tr>
+    <tr><td>960px large</td><td>Use the separately composed booking detail diagram. Verify text legibility and relation semantics independently.</td></tr>
+    <tr><td>200% zoom</td><td>Check for clipping, text overlap, and continued access to text-equivalent descriptions.</td></tr></tbody>
+  </table>
+</section>
+</main>
+<script>
+'use strict';
+const cases=[{"id":"booking-relationship","name":"Booking relationship","question":"How does a booking journey depend on an external reservation service?","takeaway":"The website offers a booking experience that depends on a separate reservations service. No technical connection is verified.","warning":"Conceptual responsibility links, not confirmed API or data transport."},{"id":"architecture-pivot","name":"Architectural pivot","question":"Why did the project change technical direction?","takeaway":"The project moved from a WordPress site and embedded booking form, through evaluation, toward Astro and an API-led approach.","warning":"Architectural choice does not mean the API has shipped."},{"id":"independent-properties","name":"Independent property experiences","question":"How can four distinctive property websites retain separate reservation accounts?","takeaway":"Each of four independently designed property sites has its own reservations account and booking responsibility.","warning":"The illustrated interfaces are conceptual; no shared account or completed API is implied."},{"id":"hms-phase-two","name":"HMS expansion","question":"What belongs to Phase 2 rather than the original site/booking scope?","takeaway":"HMS expands the work toward management and marketing coordination, and remains in development.","warning":"Planned scope is not a delivered feature."},{"id":"adversarial-review","name":"Adversarial review","question":"What separates building, independent challenge, and verification?","takeaway":"Build, independent challenge, and evidence verification are separate stages of an illustrative review process.","warning":"A review cycle does not certify correctness or guarantee zero defects."}];
+const current={subject:"booking-relationship",variant:"cutaway",size:"M"};
+const ids=x=>document.getElementById(x);
+const controls=[...document.querySelectorAll('button[data-case],button[data-variant],button[data-size]')];
+const params=new URLSearchParams(location.search);
+const queryCase=params.get('case'), queryVariant=params.get('variant'), querySize=params.get('size');
+if(cases.some(x=>x.id===queryCase)) current.subject=queryCase;
+if(['cutaway','neutral','prose'].includes(queryVariant))current.variant=queryVariant;
+if(['S','M','L'].includes(querySize))current.size=querySize;
+function draw(){
+ const n=cases.findIndex(x=>x.id===current.subject),s=cases[n];
+ const size=current.subject==="booking-relationship"&&current.variant==="cutaway"?current.size:"M";
+ const variant=current.variant;
+ let path='../'+s.id+'.svg',width=760,height=296;
+ if(variant==="neutral")path='../baselines/'+s.id+'.svg';
+ else if(variant==="cutaway"&&current.subject==="booking-relationship"&&size==="S"){path='../tiers/booking-compact.svg';width=192;height=136;}
+ else if(variant==="cutaway"&&current.subject==="booking-relationship"&&size==="L"){path='../tiers/booking-detailed.svg';width=960;height=440;}
+ const img=ids('picture'); img.src=path;img.width=width;img.height=height;img.alt=s.takeaway+' '+s.warning;
+ ids('asset').href=path;
+ ids('subjectNumber').textContent='STUDY / '+String(n+1).padStart(2,'0');
+ ids('subjectTitle').textContent=s.name;
+ ids('subjectQuestion').textContent=s.question;
+ ids('subjectWarning').textContent=s.warning;
+ ids('figcap').textContent=s.takeaway;
+ ids('prose').textContent=s.takeaway;
+ ids('stateName').textContent=variant==="prose"?'TEXT-ONLY REFERENCE':(variant==="cutaway"?'TREATMENT C':'NEUTRAL REFERENCE')+' · '+size+' / '+width+'px reference';
+ ids('stage').dataset.display=variant==="prose"?'prose':size==="S"?'compact':size==="L"?'large':'M';
+ ids('nativeNote').textContent=variant==="prose"?'Comparable short prose, no graphical symbols to interpret.':size==="S"?'This is an independently composed emblem with a plain-language caption.':width+'px native reference. On narrow screens, scroll horizontally rather than scaling down unreadable labels.';
+ ids('sizes').hidden=current.subject!=="booking-relationship"||variant!=="cutaway";
+ for(const el of controls){const d=el.dataset;const active=d.case?current.subject===d.case:d.variant?variant===d.variant:current.size===d.size;el.setAttribute('aria-pressed',String(active));}
+}
+for(const b of controls)b.addEventListener('click',()=>{
+ if(b.dataset.case) current.subject=b.dataset.case;
+ if(b.dataset.variant) current.variant=b.dataset.variant;
+ if(b.dataset.size) current.size=b.dataset.size;
+ draw();
+});
+draw();
+</script>
+</body>
+</html>

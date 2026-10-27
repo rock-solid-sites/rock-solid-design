@@ -27,6 +27,6 @@
 <rect x="124" y="67" width="46" height="8" rx="2" class="soft"/>
 <rect x="124" y="81" width="46" height="5" rx="2" class="ink"/>
 <text x="96" y="118" class="label" text-anchor="middle">BOOKING</text>
-<text x="96" y="130" class="micro" text-anchor="middle">CONCEPT / DEPENDENCY</text>
+
 
 </svg>

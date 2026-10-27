@@ -39,3 +39,21 @@ test('truth caveats are visible and future features are not presented as already
   assert.ok(manifest.studies.every(x=>x.truthMode==='reported-project'));
   assert.ok(manifest.status==='research-only');
 });
+
+test('neutral references use unbiased headings and do not stroke text by inheritance',()=>{
+  const headings=['BOOKING RELATIONSHIP','ARCHITECTURAL PIVOT','INDEPENDENT EXPERIENCES','PROJECT PHASES'];
+  for(let i=0;i<cases.length;i++){
+    const study=read('studies/v0.2/'+cases[i]+'.svg');
+    const baseline=read('studies/v0.2/baselines/'+cases[i]+'.svg');
+    const code=String(i+1).padStart(2,'0');
+    assert.ok(study.includes('SCHEMATIC STUDY / '+code));
+    assert.ok(baseline.includes('SCHEMATIC STUDY / '+code));
+    assert.ok(study.includes('>'+headings[i]+'</text>'));
+    assert.ok(baseline.includes('>'+headings[i]+'</text>'));
+    assert.doesNotMatch(baseline,/RSS \/ STRUCTURAL CUTAWAY|NEUTRAL REFERENCE|<g stroke=/);
+    assert.match(baseline,/<rect[^>]+stroke="#111111" stroke-width="1.5" fill="#FAFAF8"\/>/);
+  }
+  assert.doesNotMatch(read('studies/v0.2/architecture-pivot.svg'),/stroke-dasharray/);
+  assert.match(read('studies/v0.2/booking-relationship.svg'),/>BOOKING<\/text>/);
+  assert.match(read('studies/v0.2/booking-relationship.svg'),/>ACCOUNT<\/text>/);
+});

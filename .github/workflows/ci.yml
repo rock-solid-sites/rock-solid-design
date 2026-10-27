@@ -51,11 +51,27 @@ jobs:
           take booking-neutral      1440 1200 booking-relationship neutral M
           take booking-prose        1440 1200 booking-relationship prose M
           take booking-s-mobile      390 1800 booking-relationship cutaway S
+          # Actual narrow and mid-width browser output. M remains native/scrollable.
+          take booking-m-768         768 1200 booking-relationship cutaway M
+          take booking-m-1024       1024 1200 booking-relationship cutaway M
+          take booking-s-320         320 1800 booking-relationship cutaway S
+          take booking-s-375         375 1800 booking-relationship cutaway S
           take booking-l-desktop    1440 1200 booking-relationship cutaway L
           take architecture-desktop 1440 1200 architecture-pivot cutaway M
           take properties-desktop   1440 1200 independent-properties cutaway M
           take hms-desktop          1440 1200 hms-phase-two cutaway M
           take review-desktop       1440 1200 adversarial-review cutaway M
+          # The participant surface conceals question/answer/status before exposure.
+          "$BROWSER" --headless --no-sandbox --disable-dev-shm-usage --disable-gpu \
+            --hide-scrollbars --force-device-scale-factor=1 --virtual-time-budget=2500 \
+            --window-size=1440,1200 \
+            --screenshot="$PWD/review-snapshots/participant-c-1440.png" \
+            "file://$PWD/studies/v0.2/review/participant.html?case=booking-relationship&variant=cutaway" >/dev/null 2>&1
+          "$BROWSER" --headless --no-sandbox --disable-dev-shm-usage --disable-gpu \
+            --hide-scrollbars --force-device-scale-factor=1 --virtual-time-budget=2500 \
+            --window-size=375,1000 \
+            --screenshot="$PWD/review-snapshots/participant-s-375.png" \
+            "file://$PWD/studies/v0.2/review/participant.html?case=booking-relationship&variant=cutaway&size=S" >/dev/null 2>&1
           python3 - <<'PY'
           from pathlib import Path
           from struct import unpack
@@ -64,8 +80,8 @@ jobs:
               assert data[:8] == b"\x89PNG\r\n\x1a\n", file
               width, height = unpack(">II", data[16:24])
               print(f"{file.name}: {width}x{height}, {len(data):,} bytes")
-              assert width >= 390 and height >= 1100
-          assert len(list(Path("review-snapshots").glob("*.png"))) == 9
+              assert width >= 320 and height >= 1000
+          assert len(list(Path("review-snapshots").glob("*.png"))) == 15
           PY
       - name: Upload review evidence (not a usability test)
         uses: actions/upload-artifact@v4

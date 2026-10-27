@@ -35,6 +35,7 @@ The public library owns visual rules and reusable graphics. Consumer projects ow
 - [Comparative research: Carbon, GitLab, Red Hat, Atlassian, C4, Azure and WAI](docs/research/comparative-systems-2026-10-27.md)
 - [Proposed structural-cutaway specification v0.2](docs/schematic-grammar-v0.2-proposal.md)
 - [Pilot evaluation matrix](docs/research/validation-matrix-2026-10-27.md)
+- [Four structural-cutaway studies paired with neutral comparison diagrams](studies/v0.2/README.md)
 
 These documents describe **candidates under review**, not a new release or an already-enforced semantic diagram system.
 

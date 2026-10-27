@@ -1,6 +1,6 @@
 # Structural cutaways — proposed schematic specification v0.2
 
-**Status: DISCUSSION / UNAPPROVED.** This supplements the current experimental v0.1 source; it is **not** an implemented standard, an API promise, a release or an approved logo. See [comparative study](research/comparative-systems-2026-10-27.md).
+**Status: PROVISIONALLY SELECTED FOR FOUR RESEARCH SPECIMENS; NOT STANDARDIZED.** This supplements the current experimental v0.1 source; it is **not** an implemented standard, an API promise, a release or an approved logo. See [comparative study](research/comparative-systems-2026-10-27.md).
 
 ## Purpose
 

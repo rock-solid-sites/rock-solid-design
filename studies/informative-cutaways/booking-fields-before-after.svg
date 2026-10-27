@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 830" role="img" aria-labelledby="t d">
+<title id="t">One booking rule changes which card fields appear</title>
+<desc id="d">A paired structural-cutaway illustration showing an earlier controlled Chill Zone booking form with zero credit-card fields and the same form after an Offer 1 booking-rule change with six fields. Heavy black lines start inside a booking button and end at a Continue control within the external guest form; filled square markers identify those action points. The change was tested and rolled back, then applied across four Chill Zone room types. It does not establish successful card charging.</desc>
+<defs><pattern id="g" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M8 0H0V8" stroke="#111111" stroke-opacity=".035" fill="none"/></pattern><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#111111"/></marker></defs>
+<style>
+.frame{fill:#FAFAF8;stroke:#111111;stroke-width:4;stroke-linejoin:round}
+.external{fill:#E1E9ED;stroke:#4C7083;stroke-width:2.5}
+.uncertain{fill:#F2EADD;stroke:#A67A40;stroke-width:2.5}
+.connection{fill:none;stroke:#111111;stroke-width:4;stroke-linecap:square;stroke-linejoin:round}
+.head{font:750 27px system-ui,sans-serif;fill:#111111}
+.label{font:720 18px system-ui,sans-serif;fill:#111111}
+.small{font:500 15px system-ui,sans-serif;fill:#111111}
+.white{font:750 15px system-ui,sans-serif;fill:#FAFAF8}
+.mono{font:650 12px ui-monospace,Consolas,monospace;fill:#111111}
+.monoWhite{font:650 12px ui-monospace,Consolas,monospace;fill:#FAFAF8}
+.sub{font:550 12px ui-monospace,Consolas,monospace;fill:#464649}
+.blueText{font:700 14px system-ui,sans-serif;fill:#4C7083}
+.amberText{font:700 14px system-ui,sans-serif;fill:#805C2B}
+.mini{font:650 11px ui-monospace,Consolas,monospace;fill:#111111}
+</style>
+<rect width="1280" height="830" fill="#FAFAF8"/><rect width="1280" height="830" fill="url(#g)"/>
+<text x="36" y="38" class="mono" >TREATMENT C / EVIDENCE-BASED CUTAWAY / 01</text>
+<text x="36" y="78" class="head" >One rule. Two booking forms.</text>
+<text x="36" y="102" class="small" >Chill Zone / controlled Offer 1 test and production rollout</text>
+<path d="M36 121H1244" stroke="#CECECB"/>
+<rect x="35" y="137" width="502" height="28" rx="4" class="uncertain"/>
+<text x="49" y="157" class="amberText" >BEFORE: OFFER 1 DEFAULT (0)</text>
+<text x="1240" y="157" class="mono" text-anchor="end">HISTORICAL / ZERO CARD FIELDS</text>
+
+ <rect x="34" y="178" width="336" height="214" rx="5" class="frame"/><rect x="36" y="180" width="332" height="27" rx="3" fill="#111111"/><text x="49" y="198" class="monoWhite" >PROPERTY SITE / CHILL ZONE</text>
+ <text x="55" y="237" class="label" >Find your room</text>
+ <text x="55" y="261" class="small" >Guests, dates, availability</text>
+ <rect x="55" y="280" width="272" height="25" rx="2" fill="#E0E0DD"/>
+ <rect x="55" y="316" width="272" height="40" rx="4" fill="#111111"/>
+ <text x="190" y="341" class="white" text-anchor="middle">BOOK NOW</text>
+ <rect x="684" y="178" width="559" height="214" rx="5" class="frame"/><rect x="686" y="180" width="555" height="27" rx="3" fill="#111111"/><text x="699" y="198" class="monoWhite" >BEDS24 / HOSTED BOOKING FORM</text>
+ <text x="708" y="235" class="mono" >GUEST DETAILS</text>
+ <rect x="706" y="247" width="202" height="106" rx="5" class="frame"/>
+ <rect x="727" y="263" width="157" height="10" rx="2" fill="#D8D8D5"/>
+ <rect x="727" y="283" width="157" height="10" rx="2" fill="#D8D8D5"/>
+ <rect x="729" y="307" width="156" height="29" rx="3" fill="#111111"/>
+ <text x="807" y="327" class="white" text-anchor="middle">CONTINUE</text>
+ <rect x="951" y="247" width="267" height="107" rx="5" class="uncertain"/>
+ <text x="1083" y="291" class="label" text-anchor="middle">CARD FIELDS</text><text x="1083" y="318" class="amberText" text-anchor="middle">NOT RENDERED / 0</text>
+ <path d="M327 335H454V337H727" class="connection" marker-end="url(#arrow)"/>
+ <rect x="320" y="328" width="14" height="14" rx="1.5" fill="#111111" stroke="#FAFAF8" stroke-width="2"/><rect x="721" y="330" width="14" height="14" rx="1.5" fill="#4C7083" stroke="#FAFAF8" stroke-width="2"/>
+ <text x="515" y="309" class="mono" text-anchor="middle">BOOKING ACTION</text>
+ <text x="515" y="328" class="sub" text-anchor="middle">RULE 0 / DEFAULT</text>
+ 
+<rect x="385" y="403" width="285" height="38" rx="4" class="uncertain"/>
+<text x="528" y="428" class="amberText" text-anchor="middle">CHANGE OFFER 1: 0 → 2</text>
+<text x="692" y="427" class="sub" >CONTROLLED CHANGE / ROLLBACK VERIFIED</text>
+<rect x="35" y="466" width="502" height="28" rx="4" class="external"/>
+<text x="49" y="486" class="blueText" >AFTER: CONFIRMED WITH CARD (2)</text>
+<text x="1240" y="486" class="mono" text-anchor="end">FOUR ROOM TYPES / SIX FIELDS</text>
+
+ <rect x="34" y="507" width="336" height="214" rx="5" class="frame"/><rect x="36" y="509" width="332" height="27" rx="3" fill="#111111"/><text x="49" y="527" class="monoWhite" >PROPERTY SITE / CHILL ZONE</text>
+ <text x="55" y="566" class="label" >Find your room</text>
+ <text x="55" y="590" class="small" >Guests, dates, availability</text>
+ <rect x="55" y="609" width="272" height="25" rx="2" fill="#E0E0DD"/>
+ <rect x="55" y="645" width="272" height="40" rx="4" fill="#111111"/>
+ <text x="190" y="670" class="white" text-anchor="middle">BOOK NOW</text>
+ <rect x="684" y="507" width="559" height="214" rx="5" class="frame"/><rect x="686" y="509" width="555" height="27" rx="3" fill="#111111"/><text x="699" y="527" class="monoWhite" >BEDS24 / HOSTED BOOKING FORM</text>
+ <text x="708" y="564" class="mono" >GUEST DETAILS</text>
+ <rect x="706" y="576" width="202" height="106" rx="5" class="frame"/>
+ <rect x="727" y="592" width="157" height="10" rx="2" fill="#D8D8D5"/>
+ <rect x="727" y="612" width="157" height="10" rx="2" fill="#D8D8D5"/>
+ <rect x="729" y="636" width="156" height="29" rx="3" fill="#111111"/>
+ <text x="807" y="656" class="white" text-anchor="middle">CONTINUE</text>
+ <rect x="951" y="576" width="267" height="107" rx="5" class="external"/>
+ <text x="965" y="596" class="blueText" >SIX CARD FIELDS</text>
+   <rect x="965" y="606" width="74" height="29" rx="2" fill="#FAFAF8" stroke="#4C7083" stroke-width="1.5"/><text x="1002" y="625" class="mini" text-anchor="middle">TYPE</text><rect x="1046" y="606" width="74" height="29" rx="2" fill="#FAFAF8" stroke="#4C7083" stroke-width="1.5"/><text x="1083" y="625" class="mini" text-anchor="middle">NUMBER</text><rect x="1127" y="606" width="74" height="29" rx="2" fill="#FAFAF8" stroke="#4C7083" stroke-width="1.5"/><text x="1164" y="625" class="mini" text-anchor="middle">NAME</text><rect x="965" y="642" width="74" height="29" rx="2" fill="#FAFAF8" stroke="#4C7083" stroke-width="1.5"/><text x="1002" y="661" class="mini" text-anchor="middle">CVV</text><rect x="1046" y="642" width="74" height="29" rx="2" fill="#FAFAF8" stroke="#4C7083" stroke-width="1.5"/><text x="1083" y="661" class="mini" text-anchor="middle">MONTH</text><rect x="1127" y="642" width="74" height="29" rx="2" fill="#FAFAF8" stroke="#4C7083" stroke-width="1.5"/><text x="1164" y="661" class="mini" text-anchor="middle">YEAR</text>
+ <path d="M327 664H454V666H727" class="connection" marker-end="url(#arrow)"/>
+ <rect x="320" y="657" width="14" height="14" rx="1.5" fill="#111111" stroke="#FAFAF8" stroke-width="2"/><rect x="721" y="659" width="14" height="14" rx="1.5" fill="#4C7083" stroke="#FAFAF8" stroke-width="2"/>
+ <text x="515" y="638" class="mono" text-anchor="middle">BOOKING ACTION</text>
+ <text x="515" y="657" class="sub" text-anchor="middle">RULE 2 / CARD REQUIRED</text>
+ 
+<path d="M36 735H1244" stroke="#CECECB"/>
+<rect x="41" y="753" width="14" height="14" rx="1.5" fill="#111111" stroke="#FAFAF8" stroke-width="2"/><text x="65" y="765" class="small" >Action origin</text>
+<rect x="233" y="753" width="14" height="14" rx="1.5" fill="#4C7083" stroke="#FAFAF8" stroke-width="2"/><text x="258" y="765" class="small" >Hosted form target</text>
+<path d="M477 760H530" class="connection" marker-end="url(#arrow)"/>
+<text x="552" y="765" class="small" >Observed booking progression</text>
+<rect x="953" y="741" width="288" height="40" rx="4" class="uncertain"/>
+<text x="1096" y="766" class="amberText" text-anchor="middle">CARD FIELDS ≠ CARD CHARGE</text>
+<text x="36" y="813" class="sub" >Controlled result: 0 → 2 → 0 reproduced; later rollout saved 2 for all four rooms.</text>
+<text x="1243" y="813" class="sub" text-anchor="end">NO PAYMENT AUTHORIZATION CLAIM</text>
+</svg>

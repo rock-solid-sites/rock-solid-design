@@ -30,6 +30,14 @@ The font tokens assume the consumer provides `--font-geist` and `--font-geist-mo
 
 The public library owns visual rules and reusable graphics. Consumer projects own content, real architecture claims, semantic meaning, application behavior, accessibility audits, and infrastructure.
 
+## Active research (not part of the v0.1.0 implementation)
+
+- [Comparative research: Carbon, GitLab, Red Hat, Atlassian, C4, Azure and WAI](docs/research/comparative-systems-2026-10-27.md)
+- [Proposed structural-cutaway specification v0.2](docs/schematic-grammar-v0.2-proposal.md)
+- [Pilot evaluation matrix](docs/research/validation-matrix-2026-10-27.md)
+
+These documents describe **candidates under review**, not a new release or an already-enforced semantic diagram system.
+
 ## Contribution and licensing
 
 MIT licensed. Logos, names and trademarks remain the property of their owners; the permission to reuse the code or generic illustrations does **not** imply endorsement or trademark permission. No third-party font binaries, proprietary client designs or private editorial material are included. See `CONTRIBUTING.md` and `LICENSE`.
